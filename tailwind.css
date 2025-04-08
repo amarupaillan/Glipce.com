@@ -1,0 +1,149 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --body-bold-font-family: "Inter", Helvetica;
+  --body-bold-font-size: 16px;
+  --body-bold-font-style: normal;
+  --body-bold-font-weight: 500;
+  --body-bold-letter-spacing: -0.32px;
+  --body-bold-line-height: normal;
+  --body-large-font-family: "Inter", Helvetica;
+  --body-large-font-size: 22px;
+  --body-large-font-style: normal;
+  --body-large-font-weight: 400;
+  --body-large-letter-spacing: -0.7919999790191651px;
+  --body-large-line-height: 31px;
+  --body-medium-font-family: "Inter", Helvetica;
+  --body-medium-font-size: 16px;
+  --body-medium-font-style: normal;
+  --body-medium-font-weight: 400;
+  --body-medium-letter-spacing: -0.16px;
+  --body-medium-line-height: 23px;
+  --body-s-bold-font-family: "Inter", Helvetica;
+  --body-s-bold-font-size: 14px;
+  --body-s-bold-font-style: normal;
+  --body-s-bold-font-weight: 700;
+  --body-s-bold-letter-spacing: 0px;
+  --body-s-bold-line-height: normal;
+  --body-s-font-family: "Inter", Helvetica;
+  --body-s-font-size: 14px;
+  --body-s-font-style: normal;
+  --body-s-font-weight: 400;
+  --body-s-letter-spacing: 0px;
+  --body-s-line-height: normal;
+  --body-small-tag-font-family: "DM Sans", Helvetica;
+  --body-small-tag-font-size: 14px;
+  --body-small-tag-font-style: normal;
+  --body-small-tag-font-weight: 400;
+  --body-small-tag-letter-spacing: 0px;
+  --body-small-tag-line-height: normal;
+  --general-shadow-02: 0px 2px 12px 0px rgba(20, 20, 43, 0.08);
+  --h2-font-family: "DM Sans", Helvetica;
+  --h2-font-size: 54px;
+  --h2-font-style: normal;
+  --h2-font-weight: 700;
+  --h2-letter-spacing: -3.24px;
+  --h2-line-height: 60px;
+  --h5-font-family: "DM Sans", Helvetica;
+  --h5-font-size: 18px;
+  --h5-font-style: normal;
+  --h5-font-weight: 700;
+  --h5-letter-spacing: -0.5579999828338623px;
+  --h5-line-height: normal;
+  --tag-font-family: "Inter", Helvetica;
+  --tag-font-size: 13px;
+  --tag-font-style: normal;
+  --tag-font-weight: 500;
+  --tag-letter-spacing: -0.325px;
+  --tag-line-height: 31px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}

@@ -1,0 +1,1161 @@
+{
+  "header": {
+    "services": "Services",
+    "company": "Company",
+    "blog": "Blog",
+    "contact": "Contact",
+    "scheduleDemo": "Schedule Demo"
+  },
+  "services": {
+    "processAutomation": {
+      "title": "Business Process Automation",
+      "description": "Optimize operations, reduce costs, and eliminate errors with our intelligent automation solutions.",
+      "heroImage": {
+        "alt": "Business process automation visualization"
+      },
+      "subtitle": "Transform your business with the power of intelligent automation",
+      "caseStudy": {
+        "title": "Success Story: Transformation in the Manufacturing Sector",
+        "challenge": {
+          "title": "The Challenge",
+          "description": "A leading manufacturing company faced significant delays in their supply chain, with over 20 hours weekly spent on manual order management and a 15% error rate in data entry causing costly delays."
+        },
+        "solution": {
+          "title": "Our Solution",
+          "description": "We implemented an intelligent automation solution that fully digitized order processing, integrating ERP, inventory management, and logistics systems with intelligent document recognition."
+        },
+        "results": {
+          "title": "Results Achieved",
+          "description": "85% reduction in processing time, near-total elimination of manual errors, and a 23% increase in order fulfillment capacity, with complete ROI achieved in less than 6 months."
+        }
+      },
+      "sections": {
+        "transformation": {
+          "title": "Process Transformation",
+          "paragraph1": "In today's business environment, intelligent automation is key to staying competitive. Our solutions transform your core operations to improve efficiency and reduce costs.",
+          "paragraph2": "By using advanced technologies such as AI, machine learning, and robotic process automation, we digitize and optimize your workflows to eliminate bottlenecks and maximize productivity."
+        },
+        "approach": {
+          "title": "Our Approach",
+          "description": "We implement automation solutions following a proven methodology that guarantees quick and sustainable results.",
+          "steps": [
+            "Detailed analysis of current processes and improvement opportunities",
+            "Custom solution design based on your specific objectives",
+            "Progressive implementation with measurable results at each phase",
+            "Continuous monitoring and data-based optimization",
+            "Knowledge transfer for operational autonomy"
+          ],
+          "conclusion": "This structured approach ensures successful adoption and maximum return on investment for your automation initiatives."
+        }
+      },
+      "benefits": {
+        "title": "Key Benefits",
+        "items": [
+          {
+            "title": "Operational Cost Reduction",
+            "description": "Save up to 40% in costs by automating repetitive tasks and manual processes"
+          },
+          {
+            "title": "Greater Precision",
+            "description": "Eliminate human errors and ensure consistency across all your business processes"
+          },
+          {
+            "title": "Increased Productivity",
+            "description": "Free up your team's potential by allowing them to focus on higher-value tasks"
+          },
+          {
+            "title": "Improved Scalability",
+            "description": "Adapt your operations to demand peaks without proportionally increasing costs"
+          }
+        ]
+      },
+      "features": {
+        "title": "Features of our solution",
+        "items": [
+          {
+            "title": "Robotic Process Automation (RPA)",
+            "description": "Bots that replicate human actions to automate repetitive tasks across multiple systems"
+          },
+          {
+            "title": "Intelligent Document Processing",
+            "description": "Automatic data extraction from unstructured documents with over 95% accuracy"
+          },
+          {
+            "title": "Intelligent Workflows",
+            "description": "End-to-end process orchestration with AI-based decision making"
+          },
+          {
+            "title": "Seamless Integration",
+            "description": "Connectivity with your existing systems without the need for significant changes to your infrastructure"
+          }
+        ]
+      },
+      "approach": {
+        "title": "Our approach",
+        "description": "We implement automation solutions following a proven methodology that guarantees quick and sustainable results."
+      },
+      "phases": [
+        {
+          "title": "1. Analysis and discovery",
+          "description": "We identify automation opportunities and calculate potential return on investment"
+        },
+        {
+          "title": "2. Design and planning",
+          "description": "We create the blueprint for optimal automation of your specific processes"
+        },
+        {
+          "title": "3. Development and implementation",
+          "description": "We build and integrate automation solutions into your environment"
+        },
+        {
+          "title": "4. Monitoring and optimization",
+          "description": "We ensure continuous improvement through performance analysis and refinement"
+        }
+      ],
+      "cta": {
+        "title": "Ready to automate?",
+        "description": "Discover how we can help you transform your operations with intelligent automation solutions",
+        "button": "Request a demo"
+      },
+      "stats": [
+        {
+          "value": "40%",
+          "label": "average reduction in operational costs"
+        },
+        {
+          "value": "60%",
+          "label": "increase in productivity"
+        },
+        {
+          "value": "90%",
+          "label": "reduction in processing errors"
+        },
+        {
+          "value": "300% ROI",
+          "label": "in the first year"
+        }
+      ]
+    },
+    "businessIntelligence": {
+      "title": "Business Intelligence",
+      "description": "Transform data into strategic decisions with our advanced analytics and business intelligence platform.",
+      "heroImage": {
+        "alt": "Business intelligence dashboard showing KPIs and visualizations"
+      },
+      "subtitle": "Discover hidden insights in your data and accelerate your business growth",
+      "sections": {
+        "dataDriven": {
+          "title": "Data-driven decisions",
+          "paragraph1": "In today's economy, companies that leverage their data gain a significant competitive advantage. Our business intelligence platform transforms large volumes of data into actionable insights.",
+          "paragraph2": "We design solutions that integrate diverse data sources, normalize information, and provide advanced analytics so you can make faster and more accurate decisions."
+        },
+        "capabilities": {
+          "title": "Analytical capabilities",
+          "description": "Our platform offers a comprehensive set of analytical tools designed for modern businesses:",
+          "items": [
+            "Descriptive and diagnostic analysis with intuitive visualizations",
+            "Predictive models that identify future trends",
+            "Prescriptive analysis that recommends concrete actions",
+            "Advanced customer and market segmentation",
+            "Real-time KPI monitoring with customized alerts"
+          ]
+        }
+      },
+      "benefits": {
+        "title": "Why choose our solution",
+        "items": [
+          {
+            "title": "Faster decision making",
+            "description": "Reduce analysis time and get actionable insights in minutes, not days"
+          },
+          {
+            "title": "Improved accuracy",
+            "description": "Eliminate uncertainty with data-based analysis instead of intuition"
+          },
+          {
+            "title": "Opportunity detection",
+            "description": "Identify new business opportunities and optimize existing operations"
+          },
+          {
+            "title": "Competitive advantage",
+            "description": "Stay ahead of the competition with prescriptive insights"
+          },
+          {
+            "title": "Democratized access",
+            "description": "Intuitive platform that allows non-technical users to leverage the power of data"
+          }
+        ]
+      },
+      "metrics": {
+        "title": "Demonstrable results",
+        "items": [
+          {
+            "value": "25%",
+            "label": "increase in revenue"
+          },
+          {
+            "value": "60%",
+            "label": "faster decision making"
+          },
+          {
+            "value": "35%",
+            "label": "reduction in operational costs"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Discover the power of your data",
+        "description": "Request a personalized demonstration of our business intelligence platform",
+        "button": "Book a demo"
+      }
+    },
+    "aiCustomerSupport": {
+      "title": "AI-Powered Customer Support",
+      "title": {
+        "part1": "AI-Powered",
+        "part2": "Customer Support"
+      },
+      "description": "Transform your customer service with intelligent virtual assistants that provide instant, personalized support 24/7.",
+      "heroImage": {
+        "alt": "AI customer support chat interface"
+      },
+      "challenges": {
+        "title": "Traditional support challenges",
+        "items": [
+          {
+            "title": "Extended Wait Times",
+            "description": "Customers expect immediate responses, but human teams have limited capacity"
+          },
+          {
+            "title": "High Operational Costs",
+            "description": "Scaling support teams to meet demand becomes prohibitively expensive"
+          },
+          {
+            "title": "Inconsistent Responses",
+            "description": "Different agents may provide inconsistent information"
+          },
+          {
+            "title": "Time Limitations",
+            "description": "Customers expect 24/7 support, difficult to offer with human agents"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Our solution",
+        "description": "Virtual assistants powered by advanced AI that deliver an exceptional support experience.",
+        "features": [
+          {
+            "title": "Conversational Virtual Assistant",
+            "description": "AI that understands natural language and maintains contextual conversations"
+          },
+          {
+            "title": "Omnichannel Integration",
+            "description": "Unified presence on web, mobile apps, WhatsApp, and messaging platforms"
+          },
+          {
+            "title": "Advanced Personalization",
+            "description": "Experiences tailored to customer history and preferences"
+          },
+          {
+            "title": "Intelligent Escalation",
+            "description": "Smooth transfer to human agents when necessary"
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Key benefits",
+        "items": [
+          {
+            "title": "Instant Responses",
+            "description": "Immediate resolution of queries with no wait times"
+          },
+          {
+            "title": "24/7 Availability",
+            "description": "Continuous support without time or time zone limitations"
+          },
+          {
+            "title": "Cost Reduction",
+            "description": "Up to 70% decrease in contact center operation costs"
+          },
+          {
+            "title": "Unlimited Scalability",
+            "description": "Simultaneous handling of thousands of queries without service degradation"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "70%",
+          "label": "reduction in response time"
+        },
+        {
+          "value": "85%",
+          "label": "of queries resolved automatically"
+        },
+        {
+          "value": "40%",
+          "label": "increase in customer satisfaction"
+        },
+        {
+          "value": "60%",
+          "label": "reduction in operational costs"
+        }
+      ],
+      "cta": {
+        "title": "Revolutionize your customer service",
+        "description": "Discover how our virtual assistants can transform your customer support",
+        "button": "Request a demo"
+      },
+      "testimonial": {
+        "quote": "Since implementing the AI virtual assistant, our response times went from hours to seconds, and customer satisfaction increased by 45%.",
+        "author": "Carmen Silva",
+        "position": "Customer Experience Director, ServicioPlus"
+      }
+    },
+    "invoiceManagement": {
+      "title": "Automated Invoice Management",
+      "description": "Optimize your entire invoicing cycle with our intelligent invoice processing and management solution.",
+      "heroImage": {
+        "alt": "Automated invoice management system"
+      },
+      "subtitle": "Digitize and automate your entire invoicing process from end to end",
+      "mainDescription": "Our invoice management platform leverages artificial intelligence and natural language processing to transform your financial operations, reducing cycle times and minimizing errors.",
+      "sections": {
+        "challenges": {
+          "title": "Challenges of traditional invoice management",
+          "paragraph1": "Manual invoice management consumes valuable time, is error-prone, and delays payment cycles, affecting your cash flow and business relationships.",
+          "paragraph2": "Many businesses face issues with document loss, data discrepancies, and lack of real-time visibility, making financial decision-making difficult."
+        },
+        "solution": {
+          "title": "Our comprehensive solution",
+          "description": "Our automated invoice management platform solves these problems through advanced AI technology and natural language processing, ensuring accuracy, speed, and complete control over your invoicing process."
+        }
+      },
+      "features": {
+        "title": "Key features",
+        "items": [
+          {
+            "title": "Intelligent Data Capture",
+            "description": "Automatic extraction of key information from invoices in any format"
+          },
+          {
+            "title": "Validation and Verification",
+            "description": "Automatic checking against purchase orders and contracts"
+          },
+          {
+            "title": "Configurable Approval Flows",
+            "description": "Custom approval routes according to your business policies"
+          },
+          {
+            "title": "ERP Integration",
+            "description": "Seamless connection with SAP, Oracle, Microsoft Dynamics and other financial systems"
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Key benefits",
+        "items": [
+          {
+            "title": "Time Savings",
+            "description": "80% reduction in time spent on manual processing"
+          },
+          {
+            "title": "Fewer Errors",
+            "description": "95% decrease in registration and processing errors"
+          },
+          {
+            "title": "Cash Flow Improvement",
+            "description": "Optimization of payment schedules and leveraging early payment discounts"
+          },
+          {
+            "title": "Compliance",
+            "description": "Guaranteed adherence to local and international tax and accounting regulations"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "70%",
+          "label": "reduction in processing costs"
+        },
+        {
+          "value": "90%",
+          "label": "fewer data errors"
+        },
+        {
+          "value": "3x",
+          "label": "faster processing cycle"
+        },
+        {
+          "value": "100%",
+          "label": "real-time visibility"
+        }
+      ],
+      "process": {
+        "title": "How it works",
+        "steps": [
+          {
+            "title": "Reception and intake",
+            "description": "Automatic capture of invoices via email, web portal or scanning"
+          },
+          {
+            "title": "Extraction and validation",
+            "description": "Intelligent data recognition and validation against ERP systems"
+          },
+          {
+            "title": "Approval workflow",
+            "description": "Automatic routing to the corresponding approvers"
+          },
+          {
+            "title": "Accounting and payment",
+            "description": "Automatic recording in the general ledger and payment scheduling"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Optimize your invoice management",
+        "description": "Request a personalized demonstration of our automated invoice management solution",
+        "button": "Request information"
+      },
+      "testimonial": {
+        "quote": "Automating our invoice process reduced processing time from 15 days to just 2, improved our cash flow, and virtually eliminated all manual errors.",
+        "author": "Manuel García",
+        "position": "CFO, Grupo Industrial Ibérica"
+      }
+    },
+    "strategicConsulting": {
+      "title": "Strategic Consulting",
+      "description": "Expert strategic consulting for your digital transformation journey",
+      "heroImage": {
+        "alt": "Strategic consulting services illustration"
+      },
+      "sections": {
+        "overview": {
+          "title": "Digital Transformation Overview",
+          "paragraph1": "In today's rapidly changing business landscape, digital transformation is no longer optional but essential for maintaining competitiveness and driving growth.",
+          "paragraph2": "Our strategic consulting services provide expert guidance on leveraging emerging technologies and optimizing processes to achieve your business objectives while minimizing risks and maximizing ROI."
+        },
+        "leadGeneration": {
+          "title": "Lead Generation Strategy",
+          "description": "We help you build comprehensive lead generation strategies that combine cutting-edge digital tools with proven methodologies to attract and convert your ideal customers.",
+          "steps": [
+            "Audience analysis and segmentation to identify your most valuable potential customers",
+            "Multi-channel strategy development tailored to your specific industry and business goals",
+            "Implementation of marketing automation and AI-powered lead qualification systems",
+            "Conversion path optimization to maximize lead capture rates",
+            "Continuous testing and refinement based on performance data and market changes"
+          ]
+        }
+      },
+      "benefits": {
+        "title": "Key Benefits",
+        "items": [
+          {
+            "title": "Expert Strategic Guidance",
+            "description": "Leverage our team's expertise in digital transformation and business process optimization"
+          },
+          {
+            "title": "Accelerated Growth",
+            "description": "Implement proven strategies that drive measurable business growth and market expansion"
+          },
+          {
+            "title": "Improved Decision Making",
+            "description": "Access data-driven insights that inform strategic decisions and reduce uncertainty"
+          },
+          {
+            "title": "Competitive Advantage",
+            "description": "Stay ahead of market trends and competitors with innovative approaches"
+          },
+          {
+            "title": "Risk Mitigation",
+            "description": "Identify and address potential challenges before they impact your business"
+          }
+        ]
+      },
+      "features": {
+        "title": "Our Consulting Approach",
+        "items": [
+          {
+            "title": "Digital Transformation Roadmap",
+            "description": "Comprehensive strategy development for your organization's digital evolution"
+          },
+          {
+            "title": "Technology Stack Assessment",
+            "description": "Evaluation and recommendations for optimal technology infrastructure"
+          },
+          {
+            "title": "Process Optimization",
+            "description": "Identification of inefficiencies and implementation of streamlined workflows"
+          },
+          {
+            "title": "Change Management",
+            "description": "Structured approach to organizational change that maximizes adoption and minimizes disruption"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Ready to transform your business?",
+        "description": "Schedule a free consultation with our strategic consulting experts",
+        "button": "Book a Consultation"
+      }
+    },
+    "socialMediaViral": {
+      "title": "Social Media Viral Management",
+      "description": "Amplify your brand's reach with viral strategies for social media",
+      "sections": {
+        "intro": {
+          "title": "Transform Your Social Media Presence",
+          "description": "Our Social Media Viral Management service helps you create, manage, and optimize content that generates organic growth and engagement across all major platforms."
+        },
+        "features": {
+          "title": "Key Features",
+          "items": [
+            "Viral content strategy development",
+            "Cross-platform optimization",
+            "Trend analysis and prediction",
+            "Engagement rate optimization",
+            "Community building and management",
+            "Real-time performance analytics"
+          ]
+        },
+        "benefits": {
+          "title": "Benefits",
+          "items": [
+            {
+              "title": "Greater Brand Visibility",
+              "description": "Reach millions of potential customers through strategically designed viral content."
+            },
+            {
+              "title": "Higher Engagement Rates",
+              "description": "Generate more likes, shares, comments, and conversions with optimized content."
+            },
+            {
+              "title": "Authentic Community Growth",
+              "description": "Build a loyal audience that actively interacts with your brand."
+            },
+            {
+              "title": "Competitive Advantage",
+              "description": "Stay ahead of the competition with cutting-edge viral marketing techniques."
+            }
+          ]
+        },
+        "process": {
+          "title": "Our Process",
+          "steps": [
+            {
+              "title": "Audience Analysis",
+              "description": "We identify your target audience and analyze their behavioral patterns."
+            },
+            {
+              "title": "Content Strategy",
+              "description": "We develop a comprehensive strategy tailored to your brand and objectives."
+            },
+            {
+              "title": "Creation and Optimization",
+              "description": "We create and optimize content for maximum viral potential."
+            },
+            {
+              "title": "Distribution",
+              "description": "Strategic distribution on platforms at optimal times."
+            },
+            {
+              "title": "Analysis and Iteration",
+              "description": "Continuous monitoring and refinement based on performance data."
+            }
+          ]
+        },
+        "caseStudies": {
+          "title": "Success Stories",
+          "description": "Discover how our clients have achieved remarkable growth through our Social Media Viral Management services."
+        },
+        "cta": {
+          "title": "Ready to go viral?",
+          "description": "Let's create a social media strategy that puts your brand in the spotlight.",
+          "button": "Get Started"
+        }
+      }
+    }
+  },
+  "company": {
+    "aboutUs": "About Us",
+    "success": "Success",
+    "aboutUsPage": {
+      "title": "About Us",
+      "description": "We are experts in intelligent automation and digital transformation, committed to the success and growth of our clients.",
+      "heroImage": {
+        "alt": "Our team"
+      },
+      "history": {
+        "title": "Our History",
+        "paragraph1": "Glipce was born in 2020 with a clear mission: to help companies unlock their potential through intelligent automation. Founded by a team of experts in artificial intelligence and business processes, we identified an opportunity to transform the way companies approach repetitive tasks.",
+        "paragraph2": "Since then, we have grown to become a reference in the industry, helping hundreds of companies optimize their operations, reduce costs, and improve customer and employee satisfaction."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "paragraph1": "Our mission is to unleash the human potential in companies by automating repetitive tasks so people can focus on creative and strategic activities that truly add value.",
+        "paragraph2": "We believe that technology should serve people, not the other way around. That's why we develop solutions focused on improving the work experience, increasing productivity, and enhancing innovation."
+      },
+      "quote": "Don't waste time on repetitive tasks. Focus on what really matters to grow your business while we optimize your processes.",
+      "values": {
+        "title": "Our Values",
+        "items": [
+          {
+            "title": "Innovation",
+            "description": "We constantly seek new ways to apply technology to solve complex business problems."
+          },
+          {
+            "title": "Excellence",
+            "description": "We commit to the highest standards of quality in everything we do, from development to support."
+          },
+          {
+            "title": "Collaboration",
+            "description": "We work closely with our clients, understanding their needs and co-creating solutions tailored to their reality."
+          },
+          {
+            "title": "Impact",
+            "description": "We measure our success by the tangible value we generate for our clients and society."
+          }
+        ]
+      },
+      "whyChooseUs": {
+        "title": "Why Choose Us",
+        "items": [
+          "AI and automation experts with years of experience",
+          "Customized solutions adapted to your business reality",
+          "Focus on measurable results and demonstrable ROI",
+          "Continuous support and long-term commitment",
+          "Business model that only makes us win when you win"
+        ]
+      },
+      "cta": {
+        "title": "Ready to transform your business?",
+        "description": "Discover how we can help you automate processes, optimize operations, and accelerate your business growth with customized solutions.",
+        "button": "Talk to Our Team"
+      }
+    }
+  },
+  "language": {
+    "en": "English",
+    "es": "Spanish"
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "freeAssessment": "Free Assessment",
+    "saveWithAI": "Save with AI",
+    "automationDescription": "We automate your business processes using advanced artificial intelligence, optimizing resources and reducing operational costs by up to 40%.",
+    "contactNow": "Contact Now",
+    "contactTeam": "Talk to Our Team",
+    "readyToTransform": "Ready to Transform Your Business?",
+    "transformDescription": "Discover how we can help you automate processes, optimize operations and accelerate your business growth with customized solutions.",
+    "wantToBeNextSuccess": "Want to Be Our Next Success Story?",
+    "contactUsToday": "Contact us today to discover how we can help transform your business through intelligent automation and innovative digital solutions."
+  },
+  "testimonials": {
+    "title": "Real Results",
+    "subtitle": "Companies that multiplied their ROI with our solutions",
+    "items": [
+      {
+        "text": "We implemented invoice automation and reduced costs by exactly 78%. In just 3 months we recovered our entire investment and now save €45,000 monthly.",
+        "name": "Carlos Méndez",
+        "handle": "Financial Director - Logística Express"
+      },
+      {
+        "text": "Our customer service went from responding in 24 hours to just 2 minutes. Satisfaction increased from 67% to 94% and sales grew 35% in the first quarter.",
+        "name": "Laura Gómez",
+        "handle": "Customer Experience Director - RetailTech"
+      },
+      {
+        "text": "With their predictive analytics, we reduced stock by 42% while maintaining the same availability. Annual savings of €480,000 and 27% improvement in inventory turnover.",
+        "name": "Javier Ortega",
+        "handle": "COO - Global Distributions"
+      },
+      {
+        "text": "We automated 87% of administrative processes. Result: 52% reduction in operational costs and 45% increase in productivity. 375% ROI in 6 months.",
+        "name": "Patricia Sánchez",
+        "handle": "CEO - TechSolutions Spain"
+      },
+      {
+        "text": "We optimized routes with their AI and reduced logistics costs by exactly 38.7%. Deliveries 43% faster and 29% reduction in CO2 emissions.",
+        "name": "Rodrigo Torres",
+        "handle": "Logistics Director - TransportXpress"
+      },
+      {
+        "text": "We freed up 1,200 monthly hours in HR thanks to their automation. 93% reduction in errors and annual savings of €156,000 in this department alone.",
+        "name": "Sofía Morales",
+        "handle": "HR Director - Multinational Technology"
+      },
+      {
+        "text": "Incident resolution went from 48h to just 14 minutes. Customer satisfaction increased from 54% to 91% and we reduced staff turnover by 67%.",
+        "name": "Miguel Ángel López",
+        "handle": "Customer Service Director - Telecom Spain"
+      },
+      {
+        "text": "They integrated their AI with our 14 legacy systems without issues. Implementation time: 3 weeks (vs 9 months estimated by other providers).",
+        "name": "Elena García",
+        "handle": "CTO - Innovation Banking"
+      },
+      {
+        "text": "877% ROI in the first year. Documented savings of €1.2M in operational costs and revenue increase of €840,000 due to greater commercial efficiency.",
+        "name": "Daniel Martínez",
+        "handle": "CFO - European Industrial Group"
+      }
+    ]
+  },
+  "successStories": {
+    "title": "Success Stories",
+    "description": "Discover how we've helped companies across various industries transform their operations, reduce costs, and accelerate growth through intelligent automation.",
+    "challenge": "The Challenge:",
+    "solution": "Our Solution:",
+    "results": "Results:",
+    "clients": {
+      "fintech": "Fintech Europa",
+      "logistics": "LogisTech",
+      "retail": "Retail Connect",
+      "healthcare": "HealthCare Plus",
+      "education": "EduSmart",
+      "manufacturing": "ManufactureTech"
+    },
+    "industries": {
+      "financial": "Financial Services",
+      "transportation": "Logistics & Transportation",
+      "retail": "Retail",
+      "healthcare": "Healthcare",
+      "education": "Education",
+      "manufacturing": "Manufacturing"
+    },
+    "challenges": {
+      "fintechChallenge": "Manual processing of over 5,000 monthly applications with high error rates and long waiting times.",
+      "logisticsChallenge": "Inefficient delivery route management with high fuel consumption and frequent delays.",
+      "retailChallenge": "Overwhelmed customer service system with 45-minute wait times and low satisfaction.",
+      "healthcareChallenge": "Manual management of medical invoices with frequent errors and delays in payments to providers.",
+      "educationChallenge": "Complex administrative processes that reduced time for educational attention and content development.",
+      "manufacturingChallenge": "Manual and inefficient quality control with a high rate of defective products reaching customers."
+    },
+    "solutions": {
+      "fintechSolution": "Automation system with OCR and AI to digitize and process applications automatically.",
+      "logisticsSolution": "Implementation of route optimization system with predictive AI for traffic and operating conditions.",
+      "retailSolution": "AI virtual assistants to resolve frequent inquiries and intelligent prioritization system.",
+      "healthcareSolution": "Automated invoice processing system with intelligent validation and digital approval.",
+      "educationSolution": "Comprehensive automation platform for enrollment, evaluation, and communication with students.",
+      "manufacturingSolution": "Computer vision system with AI for automatic detection of defects in real time."
+    },
+    "resultsList": {
+      "fintechResults": "Reduction of processing time from 3 days to 4 hours, error rate below 1%, annual savings of €500,000.",
+      "logisticsResults": "23% reduction in fuel costs, 31% fewer delays, and 28% increase in daily delivery capacity.",
+      "retailResults": "Automatic resolution of 78% of inquiries, reduction of wait times to 5 minutes, and 67% increase in satisfaction.",
+      "healthcareResults": "98% reduction in billing errors, decrease in payment cycle from 45 to 7 days, and 35% savings in administrative costs.",
+      "educationResults": "75% reduction in administrative workload, 40% increase in time dedicated to students, and improved academic results.",
+      "manufacturingResults": "94% reduction in defective products delivered, 28% increase in production efficiency, and return on investment in 6 months."
+    },
+    "longQuotes": [
+      {
+        "quote": "The automation of our financial processes completely transformed our operation. Now we can dedicate more resources to innovation and less to repetitive tasks.",
+        "author": "María Rodríguez",
+        "position": "CFO, Fintech Europa"
+      },
+      {
+        "quote": "The return on investment exceeded all our expectations. We not only saved costs, but also significantly improved our customers' experience.",
+        "author": "Carlos Martínez",
+        "position": "Operations Director, LogisTech"
+      },
+      {
+        "quote": "The implementation was quick and with minimal disruption. The Glipce team accompanied us at every step of the process, ensuring immediate results.",
+        "author": "Ana Gómez",
+        "position": "CTO, Retail Connect"
+      }
+    ]
+  },
+  "features": {
+    "aiTransformer": "Transformative AI",
+    "resourcesSection": "Resources",
+    "resourcesDescription": "Access exclusive content, tools and resources designed to help you better understand the automation and digital transformation of your company."
+  },
+  "soporte": {
+    "humanVoice": "Voice indistinguishable from a human",
+    "contextualUnderstanding": "Contextual understanding of queries",
+    "intelligentRouting": "Intelligent routing when necessary"
+  },
+  "benefits": {
+    "timeSaving": "Time Savings",
+    "lessErrors": "Fewer Errors",
+    "cashFlowImprovement": "Cash Flow Improvement",
+    "compliance": "Compliance",
+    "timeReduction": "Time Reduction",
+    "qualityImprovement": "Quality Improvement",
+    "satisfactionIncrease": "Increased Satisfaction",
+    "significantROI": "Significant ROI",
+    "description": {
+      "timeSaving": "Reduction in time spent on billing tasks",
+      "lessErrors": "Reduction in billing errors and discrepancies",
+      "cashFlowImprovement": "Reduction in average collection cycle",
+      "compliance": "Guarantee of compliance with tax regulations",
+      "timeReduction": "30-50% reduction in cycle times",
+      "qualityImprovement": "Reduction of errors and rework by up to 70%",
+      "satisfactionIncrease": "Increase in customer and employee satisfaction",
+      "significantROI": "Typical investment return of 5:1 to 10:1"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "How long does implementation actually take?",
+        "answer": "Most of our solutions are operational in just 2-4 weeks. For more complex processes, the maximum timeframe is 12 weeks, but you'll start seeing partial results from week 2 onwards."
+      },
+      {
+        "question": "Do I need technical knowledge to use the solutions?",
+        "answer": "No. Our solutions are designed to be used by non-technical staff. We provide comprehensive training and an intuitive interface that allows anyone to harness the power of AI without specialized knowledge."
+      },
+      {
+        "question": "What ROI can I expect and in what timeframe?",
+        "answer": "Our clients achieve an average ROI of 5x in the first year. 83% recover their investment in less than 6 months, and in cases of invoice automation and customer service, the return can be as quick as 8 weeks."
+      },
+      {
+        "question": "Will you integrate with the systems we already have?",
+        "answer": "Absolutely. We integrate with over 250 different business systems. Our technology is designed to work with your current infrastructure, without requiring costly migrations or replacements."
+      },
+      {
+        "question": "What if it doesn't work for our business?",
+        "answer": "We offer a satisfaction guarantee. If in the first 90 days you don't experience the agreed results, we'll refund 100% of your investment. In 7 years, we've only had to make 3 refunds among more than 500 implementations."
+      },
+      {
+        "question": "How does your price compare to doing this work internally?",
+        "answer": "Developing similar capabilities internally would cost 3-5 times more and take 12-18 months. Our solution offers proven technology, ready to use, without the development risks and with a predictable cost."
+      }
+    ]
+  },
+  "homepage": {
+    "hero": {
+      "title": "Intelligent Digital Transformation for Businesses",
+      "subtitle": "AI-powered automation solutions that optimize processes, reduce costs and accelerate growth",
+      "cta": "Request a Demo"
+    },
+    "trustedBy": {
+      "title": "Trusted by Leading Companies",
+      "companies": {
+        "acme": "ACME Corp",
+        "quantum": "Quantum Solutions",
+        "echo": "Echo Systems",
+        "celestia": "Celestia Tech",
+        "pulse": "Pulse Innovations",
+        "apex": "Apex Group"
+      }
+    },
+    "features": {
+      "title": "Solutions That Transform Your Business",
+      "subtitle": "Discover how our AI solutions can revolutionize your operations",
+      "items": [
+        {
+          "title": "Process Automation",
+          "description": "Reduce time and errors by automating repetitive tasks"
+        },
+        {
+          "title": "Business Intelligence",
+          "description": "Advanced analytics for data-driven decisions"
+        },
+        {
+          "title": "AI Customer Support",
+          "description": "24/7 service with intelligent virtual assistants"
+        },
+        {
+          "title": "Invoice Management",
+          "description": "Automate the complete invoice and collection cycle"
+        },
+        {
+          "title": "Social Media Viral Management",
+          "description": "Amplify your brand's reach with viral strategies for social media"
+        }
+      ]
+    },
+    "interface": {
+      "title": "Intuitive and Powerful Interface",
+      "subtitle": "User-friendly platform with cutting-edge technology",
+      "description": "Our interface combines simplicity with powerful capabilities, allowing any user to harness the power of AI without specialized technical knowledge."
+    },
+    "pricing": {
+      "title": "Plans Tailored to Your Needs",
+      "subtitle": "Scalable solutions for businesses of all sizes",
+      "plans": [
+        {
+          "title": "Starter",
+          "price": "€1,999",
+          "description": "Ideal for small businesses looking to start their digital transformation",
+          "features": [
+            "Automation of 3 processes",
+            "Email support",
+            "1 admin user",
+            "Quarterly updates"
+          ]
+        },
+        {
+          "title": "Growth",
+          "price": "€3,999",
+          "description": "Perfect for medium-sized businesses with scaling needs",
+          "features": [
+            "Automation of 10 processes",
+            "Priority support",
+            "5 admin users",
+            "Monthly updates",
+            "Quarterly consulting"
+          ]
+        },
+        {
+          "title": "Enterprise",
+          "price": "Custom",
+          "description": "Complete solution for large companies with complex needs",
+          "features": [
+            "Unlimited processes",
+            "24/7 support",
+            "Unlimited users",
+            "Continuous updates",
+            "Monthly consulting",
+            "Custom API"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "global": {
+        "title": "Transform your business today",
+        "description": "Our experts will help you identify opportunities for improvement and automation in your organization",
+        "button": "Request free consultation"
+      }
+    }
+  },
+  "menu": {
+    "services": "Services"
+  },
+  "heroSection": {
+    "badge": "Limited Time Offer!",
+    "viewServices": "View Services",
+    "title": {
+      "part1": "Intelligent",
+      "part2": "Automation"
+    },
+    "description": "We automate your business processes using advanced AI, reducing operational costs by up to 40%. Only 5 spots left for our free initial consultation!",
+    "cta": {
+      "primary": "See how to save 40%",
+      "secondary": "Automate one process free"
+    },
+    "features": {
+      "fast": "Implementation in just 2 weeks",
+      "support": "Priority 24/7 support",
+      "roi": "300% ROI guaranteed"
+    },
+    "decorative": {
+      "cubeHelix": "Decorative cube helix image",
+      "helix": "Decorative helix image",
+      "star": "Decorative star image",
+      "bulb": "Decorative light bulb image"
+    }
+  },
+  "trustedBy": {
+    "title": "Companies That Trust Us",
+    "companies": {
+      "acme": "ACME Corp",
+      "quantum": "Quantum Solutions",
+      "echo": "Echo Systems",
+      "celestia": "Celestia Tech",
+      "pulse": "Pulse Innovations",
+      "apex": "Apex Group"
+    }
+  },
+  "featuresCard": {
+    "title": "Solutions That Transform Your Business",
+    "subtitle": "Discover how our AI solutions can revolutionize your operations",
+    "learnMore": "Learn More",
+    "items": [
+      {
+        "title": "Process Automation",
+        "description": "Reduce time and errors by automating repetitive tasks"
+      },
+      {
+        "title": "Business Intelligence",
+        "description": "Advanced analytics for data-driven decisions"
+      },
+      {
+        "title": "AI Customer Support",
+        "description": "24/7 service with intelligent virtual assistants"
+      },
+      {
+        "title": "Invoice Management",
+        "description": "Automate the complete invoice and collection cycle"
+      },
+      {
+        "title": "Strategic Consulting",
+        "description": "Expert advice for your digital transformation"
+      },
+      {
+        "title": "Intelligent CRM",
+        "description": "Comprehensive management of potential and current customers"
+      }
+    ]
+  },
+  "interfaceSection": {
+    "title": "Business Transformation with Selected Tools",
+    "subtitle": "We don't sell AI, we use the best available technology to transform your business",
+    "interface": {
+      "alt": "Selected tools for business transformation"
+    },
+    "hoverContent": {
+      "title": "Transformation, not just technology",
+      "description": "At Glipce, we select the best tools in the market and combine them with our expertise to transform your business. AI is not our final product, but the means to achieve exceptional results.",
+      "tagline": "Real impact on your business"
+    },
+    "features": [
+      {
+        "title": "Strategic selection",
+        "description": "We choose the optimal tools for each business case"
+      },
+      {
+        "title": "Custom integration",
+        "description": "We adapt each solution to your unique business ecosystem"
+      },
+      {
+        "title": "Results-focused",
+        "description": "We focus on business impact, not technology"
+      }
+    ],
+    "additionalFeatures": [
+      {
+        "title": "Technology audit",
+        "description": "We evaluate your needs and select the most appropriate tools to maximize return"
+      },
+      {
+        "title": "Intelligent automation",
+        "description": "We identify key processes where technological transformation will have the greatest impact"
+      },
+      {
+        "title": "Continuous measurement",
+        "description": "We constantly monitor and adjust to ensure optimal results"
+      }
+    ]
+  },
+  "pricing": {
+    "badge": "Flexible Plans",
+    "title": "Plans Tailored to Your Needs",
+    "subtitle": "Scalable solutions for businesses of all sizes",
+    "recommended": "Recommended",
+    "plans": [
+      {
+        "title": "Starter",
+        "price": "€1,999",
+        "tag": "/month",
+        "buttonText": "Get started",
+        "features": [
+          "Automation of 3 processes",
+          "Email support",
+          "1 admin user",
+          "Quarterly updates"
+        ]
+      },
+      {
+        "title": "Growth",
+        "price": "€3,999",
+        "tag": "/month",
+        "buttonText": "Choose plan",
+        "features": [
+          "Automation of 10 processes",
+          "Priority support",
+          "5 admin users",
+          "Monthly updates",
+          "Quarterly consulting"
+        ]
+      },
+      {
+        "title": "Enterprise",
+        "price": "Custom",
+        "tag": "",
+        "buttonText": "Contact us",
+        "features": [
+          "Unlimited processes",
+          "24/7 support",
+          "Unlimited users",
+          "Continuous updates",
+          "Monthly consulting",
+          "Custom API"
+        ]
+      }
+    ]
+  },
+  "ctaSection": {
+    "title": "Ready to transform your business?",
+    "description": "Discover how we can help you automate processes, optimize operations, and accelerate your business growth with customized solutions.",
+    "emailPlaceholder": "Enter your business email",
+    "buttonText": "Request a demo",
+    "decorative": {
+      "shape": "Decorative shape",
+      "stats": "Statistics graph"
+    }
+  },
+  "announcementBanner": {
+    "text": "EXCLUSIVE OFFER! 14-day free trial + strategic consultation at no cost",
+    "cta": "Claim now"
+  },
+  "footer": {
+    "companyDescription": "We transform businesses through AI-based intelligent automation solutions, improving operational efficiency and reducing costs.",
+    "copyright": "© 2025 Glipce. All rights reserved.",
+    "categories": [
+      {
+        "title": "Solutions",
+        "links": [
+          {
+            "name": "Process Automation",
+            "url": "/services/process-automation"
+          },
+          {
+            "name": "Business Intelligence",
+            "url": "/services/business-intelligence"
+          },
+          {
+            "name": "AI Customer Support",
+            "url": "/services/ai-customer-support"
+          },
+          {
+            "name": "Invoice Management",
+            "url": "/services/invoice-management"
+          },
+          {
+            "name": "Social Media Viral Management",
+            "url": "/services/social-media-viral-management"
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          {
+            "name": "About Us",
+            "url": "/empresa/sobre-nosotros"
+          },
+          {
+            "name": "Success Stories",
+            "url": "/empresa/casos-exito"
+          },
+          {
+            "name": "Team",
+            "url": "/empresa/equipo"
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          {
+            "name": "Blog",
+            "url": "/blog"
+          }
+        ]
+      }
+    ]
+  },
+  "servicesList": {
+    "title": "Our Services",
+    "description": "We offer a comprehensive range of technology solutions designed to boost your business's efficiency and growth",
+    "processAutomation": "Business Process Automation",
+    "businessIntelligence": "Business Intelligence",
+    "strategicConsulting": "Strategic Consulting",
+    "socialMediaViral": "Social Media Viral Management"
+  }
+} 

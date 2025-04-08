@@ -1,0 +1,1162 @@
+{
+  "header": {
+    "services": "Servicios",
+    "company": "Empresa",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "scheduleDemo": "Agendar demostración"
+  },
+  "services": {
+    "processAutomation": {
+      "title": "Automatización de Procesos de Negocio",
+      "description": "Optimice operaciones, reduzca costos y elimine errores con nuestras soluciones de automatización inteligente.",
+      "heroImage": {
+        "alt": "Visualización de automatización de procesos de negocio"
+      },
+      "subtitle": "Transforme su negocio con el poder de la automatización inteligente",
+      "caseStudy": {
+        "title": "Caso de éxito: Transformación en el sector manufacturero",
+        "challenge": {
+          "title": "El desafío",
+          "description": "Una empresa manufacturera líder enfrentaba demoras significativas en su cadena de suministro, con más de 20 horas semanales dedicadas a gestión manual de órdenes y un 15% de errores en la entrada de datos que generaban retrasos costosos."
+        },
+        "solution": {
+          "title": "Nuestra solución",
+          "description": "Implementamos una solución de automatización inteligente que digitalizó completamente el procesamiento de órdenes, integrando sistemas de ERP, gestión de inventario y logística con reconocimiento inteligente de documentos."
+        },
+        "results": {
+          "title": "Resultados alcanzados",
+          "description": "Reducción del 85% en tiempo de procesamiento, eliminación casi total de errores manuales, y un aumento del 23% en la capacidad de cumplimiento de pedidos, con un ROI completo logrado en menos de 6 meses."
+        }
+      },
+      "sections": {
+        "transformation": {
+          "title": "Transformación de procesos",
+          "paragraph1": "En el entorno empresarial actual, la automatización inteligente es clave para mantenerse competitivo. Nuestras soluciones transforman sus operaciones fundamentales para mejorar la eficiencia y reducir costos.",
+          "paragraph2": "Mediante el uso de tecnologías avanzadas como IA, machine learning y automatización robótica de procesos, digitalizamos y optimizamos sus flujos de trabajo para eliminar cuellos de botella y maximizar la productividad."
+        },
+        "approach": {
+          "title": "Nuestro enfoque",
+          "description": "Implementamos soluciones de automatización siguiendo una metodología probada que garantiza resultados rápidos y sostenibles.",
+          "steps": [
+            "Análisis detallado de procesos actuales y oportunidades de mejora",
+            "Diseño personalizado de soluciones basado en sus objetivos específicos",
+            "Implementación progresiva con resultados medibles en cada fase",
+            "Monitoreo continuo y optimización basada en datos",
+            "Transferencia de conocimiento para autonomía operativa"
+          ],
+          "conclusion": "Este enfoque estructurado asegura una adopción exitosa y un máximo retorno de inversión en sus iniciativas de automatización."
+        }
+      },
+      "benefits": {
+        "title": "Beneficios clave",
+        "items": [
+          {
+            "title": "Reducción de costos operativos",
+            "description": "Ahorre hasta un 40% en costos mediante la automatización de tareas repetitivas y procesos manuales"
+          },
+          {
+            "title": "Mayor precisión",
+            "description": "Elimine errores humanos y asegure consistencia en todos sus procesos de negocio"
+          },
+          {
+            "title": "Aumento de productividad",
+            "description": "Libere el potencial de su equipo permitiéndoles enfocarse en tareas de mayor valor"
+          },
+          {
+            "title": "Mejor escalabilidad",
+            "description": "Adapte sus operaciones a picos de demanda sin aumentar proporcionalmente los costos"
+          }
+        ]
+      },
+      "features": {
+        "title": "Características de nuestra solución",
+        "items": [
+          {
+            "title": "Automatización Robótica de Procesos (RPA)",
+            "description": "Bots que replican acciones humanas para automatizar tareas repetitivas en múltiples sistemas"
+          },
+          {
+            "title": "Procesamiento Inteligente de Documentos",
+            "description": "Extracción automática de datos de documentos no estructurados con más del 95% de precisión"
+          },
+          {
+            "title": "Flujos de Trabajo Inteligentes",
+            "description": "Orquestación de procesos de extremo a extremo con toma de decisiones basada en IA"
+          },
+          {
+            "title": "Integración Perfecta",
+            "description": "Conectividad con sus sistemas existentes sin necesidad de cambios significativos en su infraestructura"
+          }
+        ]
+      },
+      "approach": {
+        "title": "Nuestro enfoque",
+        "description": "Implementamos soluciones de automatización siguiendo una metodología probada que garantiza resultados rápidos y sostenibles."
+      },
+      "phases": [
+        {
+          "title": "1. Análisis y descubrimiento",
+          "description": "Identificamos oportunidades de automatización y calculamos el retorno potencial de inversión"
+        },
+        {
+          "title": "2. Diseño y planificación",
+          "description": "Creamos el plan para la automatización óptima de sus procesos específicos"
+        },
+        {
+          "title": "3. Desarrollo e implementación",
+          "description": "Construimos e integramos soluciones de automatización en su entorno"
+        },
+        {
+          "title": "4. Monitoreo y optimización",
+          "description": "Aseguramos la mejora continua mediante análisis de rendimiento y refinamiento"
+        }
+      ],
+      "cta": {
+        "title": "¿Listo para automatizar?",
+        "description": "Descubra cómo podemos ayudarle a transformar sus operaciones con soluciones de automatización inteligente",
+        "button": "Solicitar una demostración"
+      },
+      "stats": [
+        {
+          "value": "40%",
+          "label": "reducción promedio en costos operativos"
+        },
+        {
+          "value": "60%",
+          "label": "aumento en productividad"
+        },
+        {
+          "value": "90%",
+          "label": "reducción en errores de procesamiento"
+        },
+        {
+          "value": "300% ROI",
+          "label": "en el primer año"
+        }
+      ]
+    },
+    "businessIntelligence": {
+      "title": "Inteligencia de Negocio",
+      "description": "Transforma datos en decisiones estratégicas con nuestra plataforma avanzada de analítica e inteligencia de negocio.",
+      "heroImage": {
+        "alt": "Dashboard de inteligencia de negocio mostrando KPIs y visualizaciones"
+      },
+      "subtitle": "Descubre insights ocultos en tus datos y acelera el crecimiento de tu negocio",
+      "sections": {
+        "dataDriven": {
+          "title": "Decisiones basadas en datos",
+          "paragraph1": "En la economía actual, las empresas que aprovechan sus datos obtienen una ventaja competitiva significativa. Nuestra plataforma de inteligencia de negocio transforma grandes volúmenes de datos en insights accionables.",
+          "paragraph2": "Diseñamos soluciones que integran diversas fuentes de datos, normalizan la información y proporcionan análisis avanzados para que puedas tomar decisiones más rápidas y precisas."
+        },
+        "capabilities": {
+          "title": "Capacidades analíticas",
+          "description": "Nuestra plataforma ofrece un conjunto completo de herramientas analíticas diseñadas para empresas modernas:",
+          "items": [
+            "Análisis descriptivo y diagnóstico con visualizaciones intuitivas",
+            "Modelos predictivos que identifican tendencias futuras",
+            "Análisis prescriptivo que recomienda acciones concretas",
+            "Segmentación avanzada de clientes y mercados",
+            "Monitoreo de KPIs en tiempo real con alertas personalizadas"
+          ]
+        }
+      },
+      "benefits": {
+        "title": "Por qué elegir nuestra solución",
+        "items": [
+          {
+            "title": "Toma de decisiones más rápida",
+            "description": "Reduce el tiempo de análisis y obtén insights accionables en minutos, no días"
+          },
+          {
+            "title": "Mayor precisión",
+            "description": "Elimina la incertidumbre con análisis basados en datos en lugar de intuición"
+          },
+          {
+            "title": "Detección de oportunidades",
+            "description": "Identifica nuevas oportunidades de negocio y optimiza operaciones existentes"
+          },
+          {
+            "title": "Ventaja competitiva",
+            "description": "Mantente por delante de la competencia con insights prescriptivos"
+          },
+          {
+            "title": "Acceso democratizado",
+            "description": "Plataforma intuitiva que permite a usuarios no técnicos aprovechar el poder de los datos"
+          }
+        ]
+      },
+      "metrics": {
+        "title": "Resultados demostrables",
+        "items": [
+          {
+            "value": "25%",
+            "label": "aumento en ingresos"
+          },
+          {
+            "value": "60%",
+            "label": "toma de decisiones más rápida"
+          },
+          {
+            "value": "35%",
+            "label": "reducción en costos operativos"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Descubre el poder de tus datos",
+        "description": "Solicita una demostración personalizada de nuestra plataforma de inteligencia de negocio",
+        "button": "Reservar una demostración"
+      }
+    },
+    "aiCustomerSupport": {
+      "title": "Soporte al Cliente con IA",
+      "description": "Transforma tu servicio al cliente con asistentes virtuales inteligentes que brindan soporte instantáneo y personalizado las 24 horas.",
+      "heroImage": {
+        "alt": "Interfaz de chat de soporte al cliente con IA"
+      },
+      "challenges": {
+        "title": "Desafíos del soporte tradicional",
+        "items": [
+          {
+            "title": "Tiempos de Espera Prolongados",
+            "description": "Los clientes esperan respuestas inmediatas, pero los equipos humanos tienen capacidad limitada"
+          },
+          {
+            "title": "Altos Costos Operativos",
+            "description": "Escalar equipos de soporte para satisfacer la demanda resulta prohibitivamente costoso"
+          },
+          {
+            "title": "Respuestas Inconsistentes",
+            "description": "Diferentes agentes pueden proporcionar información inconsistente"
+          },
+          {
+            "title": "Limitaciones de Tiempo",
+            "description": "Los clientes esperan soporte 24/7, difícil de ofrecer con agentes humanos"
+          }
+        ]
+      },
+      "solution": {
+        "title": "Nuestra solución",
+        "description": "Asistentes virtuales impulsados por IA avanzada que ofrecen una experiencia de soporte excepcional.",
+        "features": [
+          {
+            "title": "Asistente Virtual Conversacional",
+            "description": "IA que comprende el lenguaje natural y mantiene conversaciones contextuales"
+          },
+          {
+            "title": "Integración Omnicanal",
+            "description": "Presencia unificada en web, aplicaciones móviles, WhatsApp y plataformas de mensajería"
+          },
+          {
+            "title": "Personalización Avanzada",
+            "description": "Experiencias adaptadas al historial y preferencias del cliente"
+          },
+          {
+            "title": "Escalamiento Inteligente",
+            "description": "Transferencia fluida a agentes humanos cuando sea necesario"
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Beneficios clave",
+        "items": [
+          {
+            "title": "Respuestas Instantáneas",
+            "description": "Resolución inmediata de consultas sin tiempos de espera"
+          },
+          {
+            "title": "Disponibilidad 24/7",
+            "description": "Soporte continuo sin limitaciones de horario o zona horaria"
+          },
+          {
+            "title": "Reducción de Costos",
+            "description": "Disminución de hasta un 70% en costos de operación del centro de contacto"
+          },
+          {
+            "title": "Escalabilidad Ilimitada",
+            "description": "Manejo simultáneo de miles de consultas sin degradación del servicio"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "70%",
+          "label": "reducción en tiempo de respuesta"
+        },
+        {
+          "value": "85%",
+          "label": "de consultas resueltas automáticamente"
+        },
+        {
+          "value": "40%",
+          "label": "aumento en satisfacción del cliente"
+        },
+        {
+          "value": "60%",
+          "label": "reducción en costos operativos"
+        }
+      ],
+      "cta": {
+        "title": "Revoluciona tu servicio al cliente",
+        "description": "Descubre cómo nuestros asistentes virtuales pueden transformar tu soporte al cliente",
+        "button": "Solicitar una demostración"
+      },
+      "testimonial": {
+        "quote": "Desde la implementación del asistente virtual con IA, nuestros tiempos de respuesta pasaron de horas a segundos, y la satisfacción del cliente aumentó en un 45%.",
+        "author": "Carmen Silva",
+        "position": "Directora de Experiencia del Cliente, ServicioPlus"
+      }
+    },
+    "strategicConsulting": {
+      "title": "Consultoría Estratégica",
+      "description": "Asesoramiento estratégico experto para tu viaje de transformación digital",
+      "heroImage": {
+        "alt": "Ilustración de servicios de consultoría estratégica"
+      },
+      "sections": {
+        "overview": {
+          "title": "Panorama de Transformación Digital",
+          "paragraph1": "En el entorno empresarial actual, en constante cambio, la transformación digital ya no es opcional sino esencial para mantener la competitividad e impulsar el crecimiento.",
+          "paragraph2": "Nuestros servicios de consultoría estratégica proporcionan orientación experta sobre cómo aprovechar las tecnologías emergentes y optimizar procesos para lograr sus objetivos comerciales mientras minimiza riesgos y maximiza el ROI."
+        },
+        "leadGeneration": {
+          "title": "Estrategia de Generación de Leads",
+          "description": "Desarrollamos planes integrales para captar clientes potenciales de alta calidad a través de canales digitales, incluyendo:",
+          "items": [
+            "Estrategias de SEO y SEM adaptadas a tu sector",
+            "Marketing de contenidos orientado a la conversión",
+            "Automatización de nurturing para leads",
+            "Optimización de presencia digital y reestructuración web",
+            "Integración con CRM y análisis avanzado de datos"
+          ]
+        }
+      },
+      "benefits": {
+        "title": "Beneficios de nuestra consultoría",
+        "items": [
+          {
+            "title": "Orientación experta",
+            "description": "Consultores especializados en tu sector y tecnologías clave"
+          },
+          {
+            "title": "Estrategia accionable",
+            "description": "Planes concretos con acciones definidas y métricas claras"
+          },
+          {
+            "title": "Enfoque pragmático",
+            "description": "Soluciones realistas adaptadas a tus recursos y capacidades"
+          },
+          {
+            "title": "Resultados medibles",
+            "description": "Seguimiento continuo de KPIs para garantizar el éxito"
+          }
+        ]
+      },
+      "methodology": {
+        "title": "Nuestra metodología",
+        "steps": [
+          {
+            "title": "Diagnóstico",
+            "description": "Evaluación exhaustiva de tus procesos, tecnología y capacidades actuales"
+          },
+          {
+            "title": "Definición",
+            "description": "Establecimiento de objetivos claros y medibles para la transformación"
+          },
+          {
+            "title": "Planificación",
+            "description": "Desarrollo de la hoja de ruta con iniciativas priorizadas"
+          },
+          {
+            "title": "Implementación",
+            "description": "Ejecución controlada con supervisión continua"
+          },
+          {
+            "title": "Optimización",
+            "description": "Ajustes basados en resultados para maximizar el retorno"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Inicia tu transformación digital",
+        "description": "Agenda una sesión de consultoría inicial gratuita con nuestros expertos",
+        "button": "Reservar sesión"
+      }
+    },
+    "socialMediaViral": {
+      "title": "Gestión Viral de Redes Sociales",
+      "description": "Amplifica el alcance de tu marca con estrategias virales para redes sociales",
+      "sections": {
+        "intro": {
+          "title": "Transforma tu Presencia en Redes Sociales",
+          "description": "Nuestro servicio de Gestión Viral de Redes Sociales te ayuda a crear, gestionar y optimizar contenido que genera crecimiento orgánico y engagement en todas las principales plataformas."
+        },
+        "features": {
+          "title": "Características Principales",
+          "items": [
+            "Desarrollo de estrategias de contenido viral",
+            "Optimización multiplataforma",
+            "Análisis y predicción de tendencias",
+            "Optimización de tasas de engagement",
+            "Construcción y gestión de comunidades",
+            "Análisis de rendimiento en tiempo real"
+          ]
+        },
+        "benefits": {
+          "title": "Beneficios",
+          "items": [
+            {
+              "title": "Mayor Visibilidad de Marca",
+              "description": "Llega a millones de clientes potenciales a través de contenido viral estratégicamente diseñado."
+            },
+            {
+              "title": "Tasas de Engagement más Altas",
+              "description": "Genera más likes, compartidos, comentarios y conversiones con contenido optimizado."
+            },
+            {
+              "title": "Crecimiento Auténtico de Comunidad",
+              "description": "Construye una audiencia leal que interactúa activamente con tu marca."
+            },
+            {
+              "title": "Ventaja Competitiva",
+              "description": "Mantente por delante de la competencia con técnicas de marketing viral de vanguardia."
+            }
+          ]
+        },
+        "process": {
+          "title": "Nuestro Proceso",
+          "steps": [
+            {
+              "title": "Análisis de Audiencia",
+              "description": "Identificamos tu público objetivo y analizamos sus patrones de comportamiento."
+            },
+            {
+              "title": "Estrategia de Contenido",
+              "description": "Desarrollamos una estrategia integral adaptada a tu marca y objetivos."
+            },
+            {
+              "title": "Creación y Optimización",
+              "description": "Creamos y optimizamos contenido para máximo potencial viral."
+            },
+            {
+              "title": "Distribución",
+              "description": "Distribución estratégica en plataformas en momentos óptimos."
+            },
+            {
+              "title": "Análisis e Iteración",
+              "description": "Monitoreo continuo y refinamiento basado en datos de rendimiento."
+            }
+          ]
+        },
+        "caseStudies": {
+          "title": "Casos de Éxito",
+          "description": "Descubre cómo nuestros clientes han logrado un crecimiento notable a través de nuestros servicios de Gestión Viral de Redes Sociales."
+        },
+        "cta": {
+          "title": "¿Listo para volverte viral?",
+          "description": "Creemos una estrategia de redes sociales que ponga a tu marca en el centro de atención.",
+          "button": "Comenzar"
+        }
+      }
+    },
+    "invoiceManagement": {
+      "title": "Gestión Automatizada de Facturas",
+      "description": "Optimiza todo tu ciclo de facturación con nuestra solución inteligente de procesamiento y gestión de facturas.",
+      "heroImage": {
+        "alt": "Sistema automatizado de gestión de facturas"
+      },
+      "subtitle": "Digitaliza y automatiza todo tu proceso de facturación de principio a fin",
+      "mainDescription": "Nuestra plataforma de gestión de facturas aprovecha la inteligencia artificial y el procesamiento de lenguaje natural para transformar tus operaciones financieras, reduciendo los tiempos de ciclo y minimizando errores.",
+      "sections": {
+        "challenges": {
+          "title": "Desafíos de la gestión tradicional de facturas",
+          "paragraph1": "La gestión manual de facturas consume tiempo valioso, es propensa a errores y retrasa los ciclos de pago, afectando tu flujo de caja y relaciones comerciales.",
+          "paragraph2": "Muchas empresas enfrentan problemas con la pérdida de documentos, discrepancias de datos y falta de visibilidad en tiempo real, dificultando la toma de decisiones financieras."
+        },
+        "solution": {
+          "title": "Nuestra solución integral",
+          "description": "Nuestra plataforma automatizada de gestión de facturas resuelve estos problemas mediante tecnología de IA avanzada y procesamiento de lenguaje natural, garantizando precisión, velocidad y control completo sobre tu proceso de facturación."
+        }
+      },
+      "features": {
+        "title": "Características clave",
+        "items": [
+          {
+            "title": "Captura Inteligente de Datos",
+            "description": "Extracción automática de información clave de facturas en cualquier formato"
+          },
+          {
+            "title": "Validación y Verificación",
+            "description": "Comprobación automática contra órdenes de compra y contratos"
+          },
+          {
+            "title": "Flujos de Aprobación Configurables",
+            "description": "Rutas de aprobación personalizadas según tus políticas empresariales"
+          },
+          {
+            "title": "Integración con ERP",
+            "description": "Conexión perfecta con SAP, Oracle, Microsoft Dynamics y otros sistemas financieros"
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Beneficios clave",
+        "items": [
+          {
+            "title": "Ahorro de Tiempo",
+            "description": "80% de reducción en tiempo dedicado al procesamiento manual"
+          },
+          {
+            "title": "Menos Errores",
+            "description": "95% de disminución en errores de registro y procesamiento"
+          },
+          {
+            "title": "Mejora del Flujo de Caja",
+            "description": "Optimización de programas de pago y aprovechamiento de descuentos por pronto pago"
+          },
+          {
+            "title": "Cumplimiento",
+            "description": "Adherencia garantizada a regulaciones fiscales y contables locales e internacionales"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "70%",
+          "label": "reducción en costos de procesamiento"
+        },
+        {
+          "value": "90%",
+          "label": "menos errores de datos"
+        },
+        {
+          "value": "3x",
+          "label": "ciclo de procesamiento más rápido"
+        },
+        {
+          "value": "100%",
+          "label": "visibilidad en tiempo real"
+        }
+      ],
+      "process": {
+        "title": "Cómo funciona",
+        "steps": [
+          {
+            "title": "Recepción e ingesta",
+            "description": "Captura automática de facturas vía email, portal web o escaneo"
+          },
+          {
+            "title": "Extracción y validación",
+            "description": "Reconocimiento inteligente de datos y validación contra sistemas ERP"
+          },
+          {
+            "title": "Flujo de aprobación",
+            "description": "Enrutamiento automático a los aprobadores correspondientes"
+          },
+          {
+            "title": "Contabilización y pago",
+            "description": "Registro automático en el libro mayor y programación de pagos"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Optimiza tu gestión de facturas",
+        "description": "Solicita una demostración personalizada de nuestra solución automatizada de gestión de facturas",
+        "button": "Solicitar información"
+      },
+      "testimonial": {
+        "quote": "Automatizar nuestro proceso de facturas redujo el tiempo de procesamiento de 15 días a solo 2, mejoró nuestro flujo de caja y prácticamente eliminó todos los errores manuales.",
+        "author": "Manuel García",
+        "position": "CFO, Grupo Industrial Ibérica"
+      }
+    }
+  },
+  "company": {
+    "aboutUs": "Sobre nosotros",
+    "success": "Éxito",
+    "aboutUsPage": {
+      "title": "Sobre Nosotros",
+      "description": "Somos expertos en automatización inteligente y transformación digital, comprometidos con el éxito y crecimiento de nuestros clientes.",
+      "heroImage": {
+        "alt": "Nuestro equipo"
+      },
+      "history": {
+        "title": "Nuestra Historia",
+        "paragraph1": "Glipce nació en 2020 con una misión clara: ayudar a las empresas a liberar su potencial mediante la automatización inteligente. Fundada por un equipo de expertos en inteligencia artificial y procesos empresariales, identificamos una oportunidad para transformar la manera en que las empresas abordan las tareas repetitivas.",
+        "paragraph2": "Desde entonces, hemos crecido hasta convertirnos en un referente en el sector, ayudando a cientos de empresas a optimizar sus operaciones, reducir costos y mejorar la satisfacción de sus clientes y empleados."
+      },
+      "mission": {
+        "title": "Nuestra Misión",
+        "paragraph1": "Nuestra misión es liberar el potencial humano de las empresas, automatizando tareas repetitivas para que las personas puedan enfocarse en actividades creativas y estratégicas que realmente aportan valor.",
+        "paragraph2": "Creemos que la tecnología debe servir a las personas, no al revés. Por eso, desarrollamos soluciones centradas en mejorar la experiencia de trabajo, aumentar la productividad y potenciar la innovación."
+      },
+      "quote": "No pierdas tiempo en tareas repetitivas. Enfócate en lo que realmente importa para hacer crecer tu negocio mientras nosotros optimizamos tus procesos.",
+      "values": {
+        "title": "Nuestros Valores",
+        "items": [
+          {
+            "title": "Innovación",
+            "description": "Buscamos constantemente nuevas formas de aplicar la tecnología para resolver problemas empresariales complejos."
+          },
+          {
+            "title": "Excelencia",
+            "description": "Nos comprometemos con los más altos estándares de calidad en todo lo que hacemos, desde el desarrollo hasta el soporte."
+          },
+          {
+            "title": "Colaboración",
+            "description": "Trabajamos estrechamente con nuestros clientes, entendiendo sus necesidades y co-creando soluciones adaptadas a su realidad."
+          },
+          {
+            "title": "Impacto",
+            "description": "Medimos nuestro éxito por el valor tangible que generamos para nuestros clientes y la sociedad."
+          }
+        ]
+      },
+      "whyChooseUs": {
+        "title": "¿Por qué elegirnos?",
+        "items": [
+          "Expertos en IA y automatización con años de experiencia",
+          "Soluciones personalizadas adaptadas a su realidad empresarial",
+          "Enfoque en resultados medibles y ROI demostrable",
+          "Soporte continuo y compromiso a largo plazo",
+          "Modelo de negocio que solo nos hace ganar cuando usted gana"
+        ]
+      },
+      "cta": {
+        "title": "¿Listo para transformar su empresa?",
+        "description": "Descubra cómo podemos ayudarle a automatizar procesos, optimizar operaciones y acelerar el crecimiento de su negocio con soluciones personalizadas.",
+        "button": "Conversar con nuestro equipo"
+      }
+    }
+  },
+  "language": {
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "common": {
+    "readMore": "Leer más",
+    "learnMore": "Saber más",
+    "freeAssessment": "Diagnóstico Gratuito",
+    "saveWithAI": "Ahorra con la AI",
+    "automationDescription": "Automatizamos los procesos de su empresa mediante inteligencia artificial avanzada, optimizando recursos y reduciendo costos operativos hasta en un 40%.",
+    "contactNow": "Contactar ahora",
+    "contactTeam": "Conversar con nuestro equipo",
+    "readyToTransform": "¿Listo para transformar su empresa?",
+    "transformDescription": "Descubra cómo podemos ayudarle a automatizar procesos, optimizar operaciones y acelerar el crecimiento de su negocio con soluciones personalizadas.",
+    "wantToBeNextSuccess": "¿Quiere ser nuestra próxima historia de éxito?",
+    "contactUsToday": "Contacte con nosotros hoy mismo para descubrir cómo podemos ayudarle a transformar su empresa mediante la automatización inteligente y soluciones digitales innovadoras."
+  },
+  "testimonials": {
+    "title": "Resultados Reales",
+    "subtitle": "Empresas que multiplicaron su ROI con nuestras soluciones",
+    "items": [
+      {
+        "text": "Implementamos la automatización de facturas y redujimos costos en un 78% exacto. En solo 3 meses recuperamos toda la inversión y ahora ahorramos €45,000 mensuales.",
+        "name": "Carlos Méndez",
+        "handle": "Director Financiero - Logística Express"
+      },
+      {
+        "text": "Nuestro servicio al cliente pasó de responder en 24 horas a solo 2 minutos. La satisfacción aumentó de 67% a 94% y las ventas crecieron un 35% en el primer trimestre.",
+        "name": "Laura Gómez",
+        "handle": "Directora de Experiencia Cliente - RetailTech"
+      },
+      {
+        "text": "Con su analítica predictiva, redujimos el stock en un 42% manteniendo la misma disponibilidad. Ahorro anual de €480,000 y mejora del 27% en rotación de inventario.",
+        "name": "Javier Ortega",
+        "handle": "COO - Distribuiciones Globales"
+      },
+      {
+        "text": "Automatizamos el 87% de procesos administrativos. Resultado: reducción del 52% en costos operativos y aumento del 45% en productividad. ROI de 375% en 6 meses.",
+        "name": "Patricia Sánchez",
+        "handle": "CEO - TechSolutions España"
+      },
+      {
+        "text": "Optimizamos rutas con su IA y redujimos costes logísticos exactamente un 38.7%. Entregas un 43% más rápidas y reducción de emisiones de CO2 del 29%.",
+        "name": "Rodrigo Torres",
+        "handle": "Director de Logística - TransporteXpress"
+      },
+      {
+        "text": "Liberamos 1,200 horas mensuales en RR.HH gracias a su automatización. Reducción del 93% en errores y ahorro anual de €156,000 solo en este departamento.",
+        "name": "Sofía Morales",
+        "handle": "Directora de RR.HH - Multinacional Tecnológica"
+      },
+      {
+        "text": "La resolución de incidencias pasó de 48h a solo 14 minutos. Satisfacción de clientes aumentó del 54% al 91% y redujimos la rotación de personal en un 67%.",
+        "name": "Miguel Ángel López",
+        "handle": "Director Atención Cliente - Telecom España"
+      },
+      {
+        "text": "Integraron su IA con nuestros 14 sistemas legacy sin problemas. Tiempo de implementación: 3 semanas (vs 9 meses estimados por otros proveedores).",
+        "name": "Elena García",
+        "handle": "CTO - Banca Innovación"
+      },
+      {
+        "text": "ROI de 877% en el primer año. Ahorro documentado de €1.2M en costos operativos y aumento de ingresos de €840,000 por mayor eficiencia comercial.",
+        "name": "Daniel Martínez",
+        "handle": "CFO - Grupo Industrial Europeo"
+      }
+    ]
+  },
+  "successStories": {
+    "title": "Casos de éxito",
+    "description": "Descubra cómo hemos ayudado a empresas de diversos sectores a transformar sus operaciones, reducir costos y acelerar su crecimiento mediante la automatización inteligente.",
+    "challenge": "El desafío:",
+    "solution": "Nuestra solución:",
+    "results": "Resultados:",
+    "clients": {
+      "fintech": "Fintech Europa",
+      "logistics": "LogisTech",
+      "retail": "Retail Connect",
+      "healthcare": "HealthCare Plus",
+      "education": "EduSmart",
+      "manufacturing": "ManufactureTech"
+    },
+    "industries": {
+      "financial": "Servicios Financieros",
+      "transportation": "Logística y Transporte",
+      "retail": "Comercio Minorista",
+      "healthcare": "Salud",
+      "education": "Educación",
+      "manufacturing": "Manufactura"
+    },
+    "challenges": {
+      "fintechChallenge": "Procesamiento manual de más de 5,000 solicitudes mensuales con alta tasa de error y largos tiempos de espera.",
+      "logisticsChallenge": "Gestión ineficiente de rutas de entrega con alto consumo de combustible y retrasos frecuentes.",
+      "retailChallenge": "Sistema de atención al cliente desbordado con tiempos de espera de 45 minutos y baja satisfacción.",
+      "healthcareChallenge": "Gestión manual de facturas médicas con errores frecuentes y retrasos en los pagos a proveedores.",
+      "educationChallenge": "Procesos administrativos complejos que restaban tiempo a la atención educativa y desarrollo de contenidos.",
+      "manufacturingChallenge": "Control de calidad manual e ineficiente con alta tasa de productos defectuosos llegando a clientes."
+    },
+    "solutions": {
+      "fintechSolution": "Sistema de automatización con OCR e IA para digitalizar y procesar solicitudes automáticamente.",
+      "logisticsSolution": "Implementación de sistema de optimización de rutas con IA predictiva para tráfico y condiciones operativas.",
+      "retailSolution": "Asistentes virtuales con IA para resolver consultas frecuentes y sistema de priorización inteligente.",
+      "healthcareSolution": "Sistema automatizado de procesamiento de facturas con validación inteligente y aprobación digital.",
+      "educationSolution": "Plataforma integral de automatización para inscripciones, evaluación y comunicación con estudiantes.",
+      "manufacturingSolution": "Sistema de visión artificial con IA para detección automática de defectos en tiempo real."
+    },
+    "resultsList": {
+      "fintechResults": "Reducción del tiempo de procesamiento de 3 días a 4 horas, tasa de error inferior al 1%, ahorro anual de €500,000.",
+      "logisticsResults": "Reducción del 23% en costos de combustible, 31% menos retrasos y aumento del 28% en capacidad de entregas diarias.",
+      "retailResults": "Resolución automática del 78% de consultas, reducción de tiempos de espera a 5 minutos y aumento de la satisfacción en un 67%.",
+      "healthcareResults": "Reducción del 98% en errores de facturación, disminución del ciclo de pago de 45 a 7 días y ahorro del 35% en costos administrativos.",
+      "educationResults": "Reducción del 75% en carga administrativa, aumento del 40% en tiempo dedicado a estudiantes y mejora de resultados académicos.",
+      "manufacturingResults": "Reducción del 94% en productos defectuosos entregados, aumento del 28% en eficiencia productiva y retorno de inversión en 6 meses."
+    },
+    "longQuotes": [
+      {
+        "quote": "La automatización de nuestros procesos financieros transformó por completo nuestra operación. Ahora podemos dedicar más recursos a innovación y menos a tareas repetitivas.",
+        "author": "María Rodríguez",
+        "position": "CFO, Fintech Europa"
+      },
+      {
+        "quote": "El retorno de inversión superó todas nuestras expectativas. No solo ahorramos costos, sino que mejoramos significativamente la experiencia de nuestros clientes.",
+        "author": "Carlos Martínez",
+        "position": "Director de Operaciones, LogisTech"
+      },
+      {
+        "quote": "La implementación fue rápida y con mínima interrupción. El equipo de Glipce nos acompañó en cada paso del proceso, asegurando resultados inmediatos.",
+        "author": "Ana Gómez",
+        "position": "CTO, Retail Connect"
+      }
+    ]
+  },
+  "features": {
+    "aiTransformer": "AI Transformadora",
+    "resourcesSection": "Recursos",
+    "resourcesDescription": "Acceda a contenido exclusivo, herramientas y recursos diseñados para ayudarle a comprender mejor la automatización y la transformación digital de su empresa."
+  },
+  "soporte": {
+    "humanVoice": "Voz indistinguible de un humano",
+    "contextualUnderstanding": "Comprensión contextual de consultas",
+    "intelligentRouting": "Derivación inteligente cuando sea necesario"
+  },
+  "benefits": {
+    "timeSaving": "Ahorro de tiempo",
+    "lessErrors": "Menos errores",
+    "cashFlowImprovement": "Mejora en flujo de caja",
+    "compliance": "Cumplimiento",
+    "timeReduction": "Reducción de tiempos",
+    "qualityImprovement": "Mejora en calidad",
+    "satisfactionIncrease": "Mayor satisfacción",
+    "significantROI": "ROI significativo",
+    "description": {
+      "timeSaving": "Reducción en el tiempo dedicado a tareas de facturación",
+      "lessErrors": "Reducción en errores de facturación y discrepancias",
+      "cashFlowImprovement": "Reducción en el ciclo de cobro promedio",
+      "compliance": "Garantía de cumplir con normativas fiscales",
+      "timeReduction": "30-50% de reducción en tiempos de ciclo",
+      "qualityImprovement": "Reducción de errores y reprocesos hasta en un 70%",
+      "satisfactionIncrease": "Aumento en satisfacción de clientes y empleados",
+      "significantROI": "Retorno de inversión típico de 5:1 a 10:1"
+    }
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "question": "¿Cuánto tiempo tarda realmente la implementación?",
+        "answer": "La mayoría de nuestras soluciones están operativas en solo 2-4 semanas. Para procesos más complejos, el plazo máximo es de 12 semanas, pero comenzará a ver resultados parciales a partir de la semana 2."
+      },
+      {
+        "question": "¿Necesito conocimientos técnicos para utilizar las soluciones?",
+        "answer": "No. Nuestras soluciones están diseñadas para ser utilizadas por personal no técnico. Proporcionamos formación completa y una interfaz intuitiva que permite a cualquier persona aprovechar el poder de la IA sin conocimientos especializados."
+      },
+      {
+        "question": "¿Cuánto ROI puedo esperar y en qué plazo?",
+        "answer": "Nuestros clientes logran un ROI promedio de 5x en el primer año. El 83% recupera la inversión en menos de 6 meses, y en casos de automatización de facturación y servicio al cliente, el retorno puede ser tan rápido como 8 semanas."
+      },
+      {
+        "question": "¿Se integrarán con los sistemas que ya tenemos?",
+        "answer": "Absolutamente. Nos integramos con más de 250 sistemas empresariales diferentes. Nuestra tecnología está diseñada para funcionar con su infraestructura actual, sin necesidad de costosas migraciones o reemplazos."
+      },
+      {
+        "question": "¿Y si no funciona para nuestro negocio?",
+        "answer": "Ofrecemos una garantía de satisfacción. Si en los primeros 90 días no experimenta los resultados acordados, le reembolsaremos el 100% de su inversión. En 7 años, solo hemos tenido que hacer 3 reembolsos entre más de 500 implementaciones."
+      },
+      {
+        "question": "¿Cómo se compara su precio con hacer este trabajo internamente?",
+        "answer": "Desarrollar capacidades similares internamente costaría 3-5 veces más y tomaría 12-18 meses. Nuestra solución ofrece tecnología probada, lista para usar, sin los riesgos de desarrollo y con un costo predecible."
+      }
+    ]
+  },
+  "homepage": {
+    "hero": {
+      "title": "Automatiza. Optimiza. Transforma.",
+      "subtitle": "Soluciones inteligentes para la era digital"
+    },
+    "trustedBy": {
+      "title": "Empresas que confían en nosotros"
+    },
+    "features": {
+      "title": "Soluciones que Transforman tu Negocio",
+      "subtitle": "Descubre cómo nuestras soluciones de automatización inteligente pueden revolucionar tus operaciones, reducir costos e impulsar el crecimiento.",
+      "items": [
+        {
+          "title": "Automatización de Procesos",
+          "description": "Optimiza flujos de trabajo y elimina tareas repetitivas"
+        },
+        {
+          "title": "Inteligencia de Datos",
+          "description": "Transforma datos brutos en conocimientos accionables"
+        },
+        {
+          "title": "Transformación Digital",
+          "description": "Reimagina tu negocio para la era digital"
+        },
+        {
+          "title": "Integración de IA",
+          "description": "Aprovecha el poder de la inteligencia artificial"
+        }
+      ]
+    },
+    "interface": {
+      "title": "Interfaz Intuitiva y Potente",
+      "subtitle": "Plataforma fácil de usar con tecnología de vanguardia",
+      "description": "Nuestra interfaz combina simplicidad con potentes capacidades, permitiendo a cualquier usuario aprovechar el poder de la IA sin necesidad de conocimientos técnicos especializados."
+    },
+    "pricing": {
+      "title": "Precios Simples y Transparentes",
+      "description": "Elige el plan que se adapte a las necesidades de tu negocio",
+      "plans": [
+        {
+          "name": "Inicial",
+          "price": "$499",
+          "period": "por mes",
+          "description": "Perfecto para pequeñas empresas que comienzan su camino de automatización",
+          "features": [
+            "Hasta 5 procesos automatizados",
+            "Panel de análisis básico",
+            "Soporte por email",
+            "Informe de rendimiento mensual",
+            "Acceso para un solo usuario"
+          ],
+          "cta": "Comenzar"
+        },
+        {
+          "name": "Profesional",
+          "price": "$999",
+          "period": "por mes",
+          "description": "Ideal para empresas en crecimiento con necesidades complejas",
+          "features": [
+            "Hasta 15 procesos automatizados",
+            "Análisis e informes avanzados",
+            "Soporte prioritario por email y teléfono",
+            "Informes de rendimiento semanales",
+            "Acceso para 5 usuarios",
+            "Opciones de integración personalizadas"
+          ],
+          "cta": "Elegir Profesional",
+          "popular": true
+        },
+        {
+          "name": "Empresarial",
+          "price": "Personalizado",
+          "period": "",
+          "description": "Solución integral para grandes organizaciones",
+          "features": [
+            "Procesos automatizados ilimitados",
+            "Análisis de nivel empresarial",
+            "Soporte dedicado 24/7",
+            "Monitoreo de rendimiento en tiempo real",
+            "Acceso para usuarios ilimitados",
+            "Desarrollo personalizado",
+            "Gerente de cuenta dedicado"
+          ],
+          "cta": "Contactar Ventas"
+        }
+      ],
+      "footnote": "Todos los planes incluyen una prueba gratuita de 14 días. No se requiere tarjeta de crédito."
+    },
+    "cta": {
+      "title": "Transforme su empresa hoy mismo",
+      "description": "Nuestros expertos le ayudarán a identificar oportunidades de mejora y automatización en su organización",
+      "button": "Solicitar consulta gratuita"
+    }
+  },
+  "heroSection": {
+    "badge": "¡Oferta por tiempo limitado!",
+    "viewServices": "Ver servicios",
+    "title": {
+      "part1": "Automatización",
+      "part2": "Inteligente"
+    },
+    "description": "Automatizamos los procesos de su empresa mediante IA avanzada, reduciendo costos operativos hasta en un 40%. ¡Solo quedan 5 plazas para nuestra asesoría gratuita inicial!",
+    "cta": {
+      "primary": "Ver cómo ahorrar 40%",
+      "secondary": "Automatiza gratis un proceso"
+    },
+    "features": {
+      "fast": "Implementación en solo 2 semanas",
+      "support": "Soporte prioritario 24/7",
+      "roi": "300% ROI garantizado"
+    },
+    "decorative": {
+      "cubeHelix": "Imagen decorativa cubo helicoidal",
+      "helix": "Imagen decorativa hélice",
+      "star": "Imagen decorativa estrella",
+      "bulb": "Imagen decorativa bombilla"
+    }
+  },
+  "trustedBy": {
+    "title": "Empresas que confían en nosotros",
+    "companies": {
+      "acme": "ACME Corp",
+      "quantum": "Quantum Solutions",
+      "echo": "Echo Systems",
+      "celestia": "Celestia Tech",
+      "pulse": "Pulse Innovations",
+      "apex": "Apex Group"
+    }
+  },
+  "featuresCard": {
+    "title": "Soluciones que Transforman su Negocio",
+    "subtitle": "Descubra cómo nuestras soluciones de IA pueden revolucionar sus operaciones",
+    "learnMore": "Saber más",
+    "items": [
+      {
+        "title": "Automatización de Procesos",
+        "description": "Reduzca tiempos y errores automatizando tareas repetitivas"
+      },
+      {
+        "title": "Inteligencia de Negocio",
+        "description": "Analítica avanzada para decisiones basadas en datos"
+      },
+      {
+        "title": "Soporte al Cliente con IA",
+        "description": "Atención 24/7 con asistentes virtuales inteligentes"
+      },
+      {
+        "title": "Gestión de Facturas",
+        "description": "Automatice el ciclo completo de facturación y cobros"
+      },
+      {
+        "title": "Consultoría Estratégica",
+        "description": "Asesoramiento experto para su transformación digital"
+      },
+      {
+        "title": "CRM Inteligente",
+        "description": "Gestión integral de clientes potenciales y actuales"
+      }
+    ]
+  },
+  "interfaceSection": {
+    "title": "Transformación de Negocio con Herramientas Seleccionadas",
+    "subtitle": "No vendemos IA, utilizamos la mejor tecnología disponible para transformar su negocio",
+    "interface": {
+      "alt": "Herramientas seleccionadas para transformación de negocio"
+    },
+    "hoverContent": {
+      "title": "Transformación, no solo tecnología",
+      "description": "En Glipce seleccionamos las mejores herramientas del mercado y las combinamos con nuestra experiencia para transformar su negocio. La IA no es nuestro producto final, sino el medio para conseguir resultados excepcionales.",
+      "tagline": "Impacto real en su negocio"
+    },
+    "features": [
+      {
+        "title": "Selección estratégica",
+        "description": "Elegimos las herramientas óptimas para cada caso de negocio"
+      },
+      {
+        "title": "Integración personalizada",
+        "description": "Adaptamos cada solución a su ecosistema empresarial único"
+      },
+      {
+        "title": "Enfoque en resultados",
+        "description": "Nos centramos en impacto de negocio, no en la tecnología"
+      }
+    ],
+    "additionalFeatures": [
+      {
+        "title": "Auditoría tecnológica",
+        "description": "Evaluamos sus necesidades y seleccionamos las herramientas más adecuadas para maximizar el retorno"
+      },
+      {
+        "title": "Automatización inteligente",
+        "description": "Identificamos procesos clave donde la transformación tecnológica tendrá mayor impacto"
+      },
+      {
+        "title": "Medición continua",
+        "description": "Monitorizamos y ajustamos constantemente para garantizar resultados óptimos"
+      }
+    ]
+  },
+  "pricing": {
+    "badge": "Planes flexibles",
+    "title": "Planes Adaptados a sus Necesidades",
+    "subtitle": "Soluciones escalables para empresas de todos los tamaños",
+    "recommended": "Recomendado",
+    "plans": [
+      {
+        "title": "Inicio",
+        "price": "€1,999",
+        "tag": "/mes",
+        "buttonText": "Comenzar ahora",
+        "features": [
+          "Automatización de 3 procesos",
+          "Soporte por email",
+          "1 usuario administrador",
+          "Actualizaciones trimestrales"
+        ]
+      },
+      {
+        "title": "Crecimiento",
+        "price": "€3,999",
+        "tag": "/mes",
+        "buttonText": "Elegir plan",
+        "features": [
+          "Automatización de 10 procesos",
+          "Soporte prioritario",
+          "5 usuarios administradores",
+          "Actualizaciones mensuales",
+          "Consultoría trimestral"
+        ]
+      },
+      {
+        "title": "Empresarial",
+        "price": "Personalizado",
+        "tag": "",
+        "buttonText": "Contactar",
+        "features": [
+          "Procesos ilimitados",
+          "Soporte 24/7",
+          "Usuarios ilimitados",
+          "Actualizaciones continuas",
+          "Consultoría mensual",
+          "API personalizada"
+        ]
+      }
+    ]
+  },
+  "ctaSection": {
+    "title": "¿Listo para transformar su empresa?",
+    "description": "Descubra cómo podemos ayudarle a automatizar procesos, optimizar operaciones y acelerar el crecimiento de su negocio con soluciones personalizadas.",
+    "emailPlaceholder": "Ingrese su email empresarial",
+    "buttonText": "Solicitar demostración",
+    "decorative": {
+      "shape": "Forma decorativa",
+      "stats": "Gráfico de estadísticas"
+    }
+  },
+  "announcementBanner": {
+    "text": "¡OFERTA EXCLUSIVA! Prueba gratuita de 14 días + consultoría estratégica sin costo",
+    "cta": "Aprovecha ahora"
+  },
+  "footer": {
+    "companyDescription": "Transformamos empresas a través de soluciones de automatización inteligente basadas en IA, mejorando la eficiencia operativa y reduciendo costos.",
+    "copyright": "© 2025 Glipce. Todos los derechos reservados.",
+    "categories": [
+      {
+        "title": "Soluciones",
+        "links": [
+          {
+            "name": "Automatización de Procesos",
+            "url": "/services/process-automation"
+          },
+          {
+            "name": "Inteligencia de Negocio",
+            "url": "/services/business-intelligence"
+          },
+          {
+            "name": "Soporte al Cliente con IA",
+            "url": "/services/ai-customer-support"
+          },
+          {
+            "name": "Gestión de Facturas",
+            "url": "/services/invoice-management"
+          },
+          {
+            "name": "Gestión Viral de Redes Sociales",
+            "url": "/services/social-media-viral-management"
+          }
+        ]
+      },
+      {
+        "title": "Empresa",
+        "links": [
+          {
+            "name": "Sobre nosotros",
+            "url": "/empresa/sobre-nosotros"
+          },
+          {
+            "name": "Casos de éxito",
+            "url": "/empresa/casos-exito"
+          },
+          {
+            "name": "Equipo",
+            "url": "/empresa/equipo"
+          }
+        ]
+      },
+      {
+        "title": "Recursos",
+        "links": [
+          {
+            "name": "Blog",
+            "url": "/blog"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": {
+    "services": "Servicios"
+  },
+  "cta": {
+    "global": {
+      "title": "Transforma tu negocio hoy",
+      "description": "Nuestros expertos te ayudarán a identificar oportunidades de mejora y automatización en tu organización",
+      "button": "Solicitar consulta gratuita"
+    }
+  },
+  "servicesList": {
+    "title": "Nuestros Servicios",
+    "description": "Ofrecemos una gama completa de soluciones tecnológicas diseñadas para impulsar la eficiencia y el crecimiento de tu empresa",
+    "processAutomation": "Automatización de Procesos de Negocio",
+    "businessIntelligence": "Inteligencia de Negocio",
+    "aiCustomerSupport": "Soporte al Cliente con IA",
+    "invoiceManagement": "Gestión Automatizada de Facturas",
+    "strategicConsulting": "Consultoría Estratégica",
+    "socialMediaViral": "Gestión Viral de Redes Sociales"
+  }
+}
