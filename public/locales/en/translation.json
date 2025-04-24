@@ -1157,5 +1157,345 @@
     "businessIntelligence": "Business Intelligence",
     "strategicConsulting": "Strategic Consulting",
     "socialMediaViral": "Social Media Viral Management"
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "Ready to transform your company? Complete the form and we will get in touch with you.",
+    "formTitle": "Contact Form",
+    "email": {
+      "title": "Email",
+      "description": "Send us a direct message"
+    },
+    "phone": {
+      "title": "Phone",
+      "description": "Monday to Friday, 9:00 AM - 6:00 PM"
+    },
+    "chat": {
+      "title": "Live Chat",
+      "description": "Real-time support",
+      "button": "Start chat",
+      "devMessage": "Chat feature under development"
+    }
+  },
+  "blog": {
+    "article": {
+      "loadError": "Article not found",
+      "loadErrorDescription": "The article you are looking for does not exist or has been moved.",
+      "backButton": "Back to blog",
+      "loading": "Loading article...",
+      "authorLabel": "Author",
+      "authorName": "Carlos Rodriguez",
+      "authorTitle": "Automation & AI Specialist",
+      "authorBio": "Carlos is an expert in process automation and artificial intelligence with over 10 years of experience helping companies implement advanced technological solutions.",
+      "readingTimeSuffix": "min read",
+      "tableOfContentsTitle": "Article Contents",
+      "shareArticle": "Share this article:",
+      "shareLinkCopied": "Link copied to clipboard",
+      "relatedArticlesTitle": "Related Articles",
+      "fallbackImageAlt": "Alternative image for article"
+    },
+    "index": {
+      "title": "Automation & AI Blog",
+      "description": "Explore the latest trends, strategies, and success stories in automation, AI, and digital transformation.",
+      "searchPlaceholder": "Search articles...",
+      "allCategories": "All categories"
+    },
+    "articles": {
+      "beneficios-automatizacion-empresarial": {
+        "title": "7 Key Benefits of Business Automation in 2024",
+        "category": "Automation",
+        "date": "May 20, 2024",
+        "excerpt": "Discover how business automation can transform your company, increase productivity, and significantly reduce operational costs.",
+        "tags": ["automation", "productivity", "efficiency", "digital transformation"],
+        "tableOfContents": [
+          "Reduction of operational costs",
+          "Increase in productivity",
+          "Improved customer experience",
+          "Error reduction",
+          "Process scalability",
+          "Greater data analysis",
+          "Competitive advantages"
+        ],
+        "content": [
+          {
+            "title": "Reduction of operational costs",
+            "paragraphs": [
+              "Business process automation allows for significant reduction in operational costs by eliminating repetitive manual tasks that consume large amounts of time and resources.",
+              "Companies implementing automation solutions report an average reduction of 40% in their operational costs related to administrative processes. This decrease is mainly due to the reduced need for human intervention and resource optimization."
+            ],
+            "imageAlt": "Graph showing reduction of operational costs",
+            "imageCaption": "Comparative cost analysis before and after implementing automation"
+          },
+          {
+            "title": "Increase in productivity",
+            "paragraphs": [
+              "By automating repetitive tasks, employees can focus on higher-value activities that require creativity, strategic thinking, and interpersonal skills.",
+              "According to recent studies, organizations implementing intelligent automation experience an average increase of 35% in overall productivity, allowing more tasks to be completed in less time and with higher quality."
+            ]
+          }
+        ]
+      },
+      "inteligencia-artificial-servicio-cliente": {
+        "title": "How to Implement AI in Customer Service to Improve Satisfaction",
+        "category": "Artificial Intelligence",
+        "date": "May 15, 2024",
+        "excerpt": "Artificial intelligence is revolutionizing customer service. Discover practical strategies to implement AI and increase your customer satisfaction.",
+        "tags": ["artificial intelligence", "customer service", "chatbots", "customer experience"],
+        "tableOfContents": [
+          "The impact of AI on customer service",
+          "Implementation of intelligent chatbots",
+          "Personalization through AI",
+          "Predictive analysis of needs",
+          "Success stories"
+        ],
+        "content": [
+          {
+            "title": "The impact of AI on customer service",
+            "paragraphs": [
+              "Artificial intelligence has radically transformed the way companies interact with their customers, enabling faster, more personalized, and effective responses at any time of the day.",
+              "According to a Gartner study, organizations implementing AI in their customer service experience a 70% reduction in query resolution time and a 25% increase in overall satisfaction."
+            ],
+            "imageAlt": "AI customer service interface",
+            "imageCaption": "Customer support system powered by artificial intelligence"
+          }
+        ]
+      },
+      "big-data-toma-decisiones": {
+        "title": "Big Data: The Key to Strategic Decision Making",
+        "category": "Data Analysis",
+        "date": "May 10, 2024",
+        "excerpt": "The analysis of large volumes of data is revolutionizing how companies make decisions. Discover how to implement Big Data in your business strategy.",
+        "tags": ["big data", "analysis", "decision making", "strategy"],
+        "tableOfContents": [
+          "Fundamentals of Big Data",
+          "Necessary infrastructure",
+          "Predictive analysis",
+          "Data visualization",
+          "Practical cases"
+        ],
+        "content": [
+          {
+            "title": "Fundamentals of Big Data",
+            "paragraphs": [
+              "Big Data refers to the analysis of extremely large and complex data sets that traditional data processing applications cannot handle adequately.",
+              "This approach allows identifying hidden patterns, trends, and correlations that can transform how a company makes strategic and operational decisions."
+            ]
+          }
+        ]
+      },
+      "automatizacion-procesos-rpa": {
+        "title": "RPA: The Silent Revolution in Process Automation",
+        "category": "Automation",
+        "date": "May 5, 2024",
+        "excerpt": "Robotic Process Automation (RPA) is transforming how companies manage repetitive tasks. Discover how to implement it effectively.",
+        "tags": ["RPA", "automation", "processes", "robotics"],
+        "tableOfContents": [
+          "What is RPA?",
+          "Main benefits",
+          "Common use cases",
+          "Successful implementation",
+          "The future of RPA"
+        ],
+        "content": [
+          {
+            "title": "What is RPA?",
+            "paragraphs": [
+              "Robotic Process Automation (RPA) is a technology that allows configuring software or 'robots' to capture and interpret existing applications to process transactions, manipulate data, trigger responses, and communicate with other digital systems.",
+              "Unlike other forms of automation, RPA can adapt to almost any business process without needing to change the existing infrastructure."
+            ]
+          }
+        ]
+      },
+      "ciberseguridad-empresarial-2024": {
+        "title": "Enterprise Cybersecurity: Protecting Your Business in the Digital Age",
+        "category": "Security",
+        "date": "May 1, 2024",
+        "excerpt": "With the increase in cyberattacks, protecting digital assets has become crucial. Discover best practices in cybersecurity for businesses.",
+        "tags": ["cybersecurity", "protection", "data", "information security"],
+        "tableOfContents": [
+          "Current threats",
+          "Protection strategies",
+          "Incident management",
+          "Staff training",
+          "Emerging technologies"
+        ],
+        "content": [
+          {
+            "title": "Current threats",
+            "paragraphs": [
+              "The cyber threat landscape is constantly evolving, with attackers developing increasingly sophisticated methods to breach business security.",
+              "According to recent reports, ransomware attacks increased by 150% in the last year, while data breaches affected more than 35 million business records globally."
+            ]
+          }
+        ]
+      },
+      "cloud-computing-transformacion-digital": {
+        "title": "Cloud Computing: The Fundamental Pillar of Digital Transformation",
+        "category": "Technology",
+        "date": "April 25, 2024",
+        "excerpt": "Cloud migration is redefining how businesses operate. Explore the advantages, challenges, and strategies for successful cloud computing implementation.",
+        "tags": ["cloud", "SaaS", "digital transformation", "infrastructure"],
+        "tableOfContents": [
+          "Cloud service models",
+          "Business benefits",
+          "Security considerations",
+          "Migration strategies",
+          "Future trends"
+        ],
+        "content": [
+          {
+            "title": "Cloud service models",
+            "paragraphs": [
+              "Cloud computing offers various service models that businesses can adopt based on their specific needs: IaaS (Infrastructure as a Service), PaaS (Platform as a Service), and SaaS (Software as a Service).",
+              "Each model provides different levels of control, flexibility, and shared responsibility between the provider and the customer, allowing organizations to choose the option that best suits their strategic and operational objectives."
+            ]
+          }
+        ]
+      },
+      "blockchain-aplicaciones-empresariales": {
+        "title": "Blockchain Beyond Cryptocurrencies: Business Applications",
+        "category": "Innovation",
+        "date": "April 20, 2024",
+        "excerpt": "Blockchain technology is finding revolutionary applications in various business sectors. Discover how this technology can transform your business processes.",
+        "tags": ["blockchain", "smart contracts", "traceability", "decentralization"],
+        "tableOfContents": [
+          "Fundamentals of blockchain",
+          "Smart contracts",
+          "Supply chain",
+          "Decentralized finance",
+          "Success stories"
+        ],
+        "content": [
+          {
+            "title": "Fundamentals of blockchain",
+            "paragraphs": [
+              "Blockchain is a distributed ledger technology that allows storing information immutably, transparently, and decentralizedly, eliminating the need for intermediaries and increasing trust between parties.",
+              "Its unique architecture ensures that once data is recorded, it cannot be altered without all network participants being notified, providing an unprecedented level of security and traceability."
+            ]
+          }
+        ]
+      },
+      "inteligencia-artificial-generativa-empresas": {
+        "title": "Generative Artificial Intelligence: New Opportunities for Businesses",
+        "category": "Artificial Intelligence",
+        "date": "April 15, 2024",
+        "excerpt": "Generative AI is creating new possibilities for business innovation. Explore how this technology can enhance creativity and efficiency in your organization.",
+        "tags": ["generative AI", "innovation", "creativity", "automation"],
+        "tableOfContents": [
+          "What is generative AI",
+          "Applications in marketing",
+          "Product design and development",
+          "Content optimization",
+          "Practical implementation"
+        ],
+        "content": [
+          {
+            "title": "What is generative AI",
+            "paragraphs": [
+              "Generative Artificial Intelligence refers to algorithms capable of creating new and original content, such as text, images, music, or designs, after being trained on large amounts of existing data.",
+              "Unlike traditional AI, which focuses on analyzing and classifying information, generative AI can produce entirely new results that did not previously exist, opening enormous possibilities for business innovation."
+            ],
+            "imageAlt": "Visual representation of generative AI",
+            "imageCaption": "Visualization of patterns generated by creative AI"
+          }
+        ]
+      }
+    }
+  },
+  "form": {
+    "next": "Next",
+    "previous": "Back",
+    "submit": "Submit",
+    "selectOption": "Select an option",
+    "errors": {
+      "required": "This field is required",
+      "generic": "An error occurred",
+      "invalidEmail": "Please enter a valid email address",
+      "phoneFormat": "Please enter a valid phone number"
+    },
+    "hints": {
+      "keyboardSubmit": "Press Enter to continue",
+      "textareaSubmit": "Press Ctrl+Enter to continue"
+    },
+    "success": {
+      "title": "Thank you!",
+      "message": "Your message has been sent successfully. We'll get back to you soon.",
+      "restart": "Send another message"
+    },
+    "error": {
+      "title": "Oops!",
+      "message": "There was a problem sending your message.",
+      "retry": "Try again"
+    },
+    "fields": {
+      "name": {
+        "label": "What's your name?",
+        "placeholder": "Enter your full name"
+      },
+      "email": {
+        "label": "What's your email address?",
+        "placeholder": "email@example.com"
+      },
+      "phone": {
+        "label": "What's your phone number?",
+        "placeholder": "Enter your phone number"
+      },
+      "service": {
+        "label": "Which service are you interested in?",
+        "placeholder": "Select a service",
+        "options": {
+          "automation": "Process Automation",
+          "intelligence": "Business Intelligence",
+          "support": "AI Customer Support",
+          "invoices": "Invoice Management",
+          "social": "Social Media Viral Management"
+        }
+      },
+      "message": {
+        "label": "How can we help you?",
+        "placeholder": "Briefly describe your project or inquiry"
+      },
+      "company": {
+        "label": "What company do you work for?",
+        "placeholder": "Enter your company name"
+      },
+      "role": {
+        "label": "What's your role in the company?",
+        "placeholder": "E.g. Marketing Manager, CEO, etc."
+      },
+      "budget": {
+        "label": "What's your estimated budget?",
+        "placeholder": "Select a budget range",
+        "options": {
+          "under5k": "Under $5,000",
+          "5kTo10k": "$5,000 - $10,000",
+          "10kTo25k": "$10,000 - $25,000",
+          "25kTo50k": "$25,000 - $50,000",
+          "over50k": "Over $50,000"
+        }
+      },
+      "timeline": {
+        "label": "What's your timeline for this project?",
+        "placeholder": "Select a timeline",
+        "options": {
+          "asap": "As soon as possible",
+          "1month": "Within 1 month",
+          "3months": "Within 3 months",
+          "6months": "Within 6 months",
+          "flexible": "Flexible"
+        }
+      },
+      "source": {
+        "label": "How did you hear about us?",
+        "placeholder": "Select an option",
+        "options": {
+          "search": "Search Engine",
+          "social": "Social Media",
+          "referral": "Referral",
+          "advertising": "Advertising",
+          "other": "Other"
+        }
+      }
+    }
   }
 } 

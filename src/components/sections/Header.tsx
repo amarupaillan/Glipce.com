@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback, memo } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
-import { useTranslation } from 'react-i18next';
-import { LanguageSelector } from "../ui/language-selector";
+import { ThemeToggle } from "../ui/theme-toggle";
+import { cn } from "../../lib/utils";
+import { useTranslation } from "../../hooks/useTranslation";
 
 // Subcomponente para dropdowns en escritorio
-const DesktopDropdown = ({ 
+const DesktopDropdown = memo(({ 
   title, 
   isActive, 
   toggleDropdown, 
@@ -13,23 +14,23 @@ const DesktopDropdown = ({
 }: { 
   title: string; 
   isActive: boolean; 
-  toggleDropdown: () => void; 
+  toggleDropdown: (e: React.MouseEvent<HTMLElement>) => void; 
   links: { to: string; text: string }[] 
 }) => {
   return (
     <div className="relative group">
       <button 
         onClick={toggleDropdown}
-        className="flex items-center text-white hover:text-purple-400 transition-colors font-medium"
+        className="flex items-center gap-1 px-3 py-2 rounded-md transition-colors font-medium text-foreground hover:text-primary hover:bg-primary/10"
       >
         {title}
-        <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg className={`w-4 h-4 transition-transform duration-200 ${isActive ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
       <div 
-        className={`absolute left-0 mt-2 w-60 rounded-xl shadow-2xl bg-black border border-purple-500/20 transition-all duration-200 z-50 ${
-          isActive ? 'opacity-100 visible' : 'opacity-0 invisible'
+        className={`absolute left-0 mt-2 w-60 rounded-xl shadow-lg bg-background/95 backdrop-blur-sm border border-border transition-all duration-200 z-50 ${
+          isActive ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-[-8px]'
         }`}
       >
         <div className="py-2 px-1">
@@ -37,7 +38,7 @@ const DesktopDropdown = ({
             <Link 
               key={index} 
               to={link.to} 
-              className="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/10 hover:text-white rounded-lg transition-colors"
+              className="block px-4 py-2 text-sm text-muted-foreground hover:bg-primary/10 hover:text-foreground rounded-lg transition-colors"
             >
               {link.text}
             </Link>
@@ -46,10 +47,12 @@ const DesktopDropdown = ({
       </div>
     </div>
   );
-};
+});
+
+DesktopDropdown.displayName = 'DesktopDropdown';
 
 // Subcomponente para dropdowns en móvil
-const MobileDropdown = ({ 
+const MobileDropdown = memo(({ 
   title, 
   isActive, 
   toggleDropdown, 
@@ -64,7 +67,7 @@ const MobileDropdown = ({
     <div>
       <button 
         onClick={toggleDropdown}
-        className="flex items-center justify-between w-full py-3 px-4 text-white hover:bg-purple-600/10 rounded-lg transition-colors"
+        className="flex items-center justify-between w-full py-3 px-4 text-foreground hover:bg-primary/10 rounded-lg transition-colors"
       >
         <span className="font-medium">{title}</span>
         <svg 
@@ -83,7 +86,7 @@ const MobileDropdown = ({
             <Link 
               key={index} 
               to={link.to} 
-              className="block py-2 px-4 text-gray-300 hover:bg-purple-600/10 hover:text-white rounded-lg transition-colors"
+              className="block py-2 px-4 text-muted-foreground hover:bg-primary/10 hover:text-foreground rounded-lg transition-colors"
             >
               {link.text}
             </Link>
@@ -92,145 +95,221 @@ const MobileDropdown = ({
       )}
     </div>
   );
-};
+});
 
-export const Header = (): JSX.Element => {
-  const { t } = useTranslation();
+MobileDropdown.displayName = 'MobileDropdown';
+
+// Language Toggle Button
+const LanguageToggle = memo(() => {
+  const { language, setLanguage } = useTranslation();
+  
+  return (
+    <button
+      onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
+      className="p-2 rounded-full bg-muted/50 hover:bg-muted transition-colors"
+      title={language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
+      aria-label={language === 'es' ? 'Switch to English' : 'Cambiar a Español'}
+    >
+      <span className="text-sm font-medium">
+        {language === 'es' ? 'EN' : 'ES'}
+      </span>
+    </button>
+  );
+});
+
+LanguageToggle.displayName = 'LanguageToggle';
+
+// Enlaces estáticos para evitar recreaciones
+const mainLinks = [
+  { to: "/servicios", key: "Servicios" },
+  { to: "/planes", key: "Planes" },
+  { to: "/contacto", key: "Contacto" }
+];
+
+const serviciosLinks = [
+  { to: "/servicios#contenido", key: "Creación de Contenido" },
+  { to: "/servicios#landing", key: "Landing Pages" },
+  { to: "/servicios#agentes", key: "Agentes de IA" }
+];
+
+export const Header = memo((): JSX.Element => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const { t } = useTranslation();
+  const calendlyUrl = "https://calendly.com/amarupaillan1966/30min";
 
-  // Datos para los menús
-  const serviceLinks = [
-    { to: "/servicios/automatizacion-procesos", text: t('servicesList.processAutomation') },
-    { to: "/servicios/inteligencia-negocio", text: t('servicesList.businessIntelligence') },
-    { to: "/servicios/soporte-cliente-ia", text: t('servicesList.aiCustomerSupport') },
-    { to: "/servicios/gestion-facturas", text: t('servicesList.invoiceManagement') },
-    { to: "/servicios/social-media-viral-management", text: t('servicesList.socialMediaViral') }
-  ];
+  // Optimizar handlers con useCallback
+  const toggleMobileMenu = useCallback(() => {
+    setMobileMenuOpen(prev => !prev);
+  }, []);
 
-  const companyLinks = [
-    { to: "/empresa/sobre-nosotros", text: t('company.aboutUs') },
-    { to: "/empresa/casos-exito", text: t('company.success') }
-  ];
+  const toggleDropdown = useCallback((dropdown: string, event?: React.MouseEvent<HTMLElement>) => {
+    if (event) {
+      event.stopPropagation();
+    }
+    setActiveDropdown(current => current === dropdown ? null : dropdown);
+  }, []);
 
+  // Handlers específicos para cada dropdown
+  const handleServiciosToggle = useCallback((e: React.MouseEvent<HTMLElement>) => {
+    toggleDropdown('servicios', e);
+  }, [toggleDropdown]);
+
+  const handleServiciosMobileToggle = useCallback(() => {
+    toggleDropdown('servicios-mobile');
+  }, [toggleDropdown]);
+
+  // Optimizar efecto del scroll
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
+  // Cierra el dropdown al hacer click fuera
+  useEffect(() => {
+    if (!activeDropdown) return;
+    
+    const handleClickOutside = () => {
+      setActiveDropdown(null);
+    };
+    
+    window.addEventListener('click', handleClickOutside);
+    return () => window.removeEventListener('click', handleClickOutside);
+  }, [activeDropdown]);
 
-  const toggleDropdown = (menu: string) => {
-    setActiveDropdown(activeDropdown === menu ? null : menu);
-  };
+  // Traducciones de links
+  const translatedMainLinks = mainLinks.map(link => ({
+    ...link,
+    text: t(link.key)
+  }));
+  
+  const translatedServiciosLinks = serviciosLinks.map(link => ({
+    ...link,
+    text: t(link.key)
+  }));
 
   return (
     <header 
-      className={`w-full sticky top-0 z-50 transition-all duration-300 ${
+      className={cn(
+        "w-full sticky top-0 z-50 transition-all duration-300",
         scrolled 
-          ? "bg-black/90 backdrop-blur-lg rounded-xl mx-4 mt-1 shadow-xl shadow-purple-900/10 translate-y-[-8px]" 
-          : "bg-black/70 backdrop-blur-md"
-      }`}
+          ? "bg-background/80 backdrop-blur-md border-b border-border shadow-lg shadow-purple-900/5 py-3" 
+          : "bg-background py-4"
+      )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-500">
-            Glipce.com
+          <Link to="/" className="font-bold text-2xl md:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-purple-500">
+            Glipce<span className="text-primary">.com</span>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-1">
             <DesktopDropdown 
-              title={t('header.services')}
-              isActive={activeDropdown === 'servicios'}
-              toggleDropdown={() => toggleDropdown('servicios')}
-              links={serviceLinks}
+              title={t("Servicios")} 
+              isActive={activeDropdown === 'servicios'} 
+              toggleDropdown={handleServiciosToggle} 
+              links={translatedServiciosLinks} 
             />
-
-            <DesktopDropdown 
-              title={t('header.company')}
-              isActive={activeDropdown === 'empresa'}
-              toggleDropdown={() => toggleDropdown('empresa')}
-              links={companyLinks}
-            />
-
-            <Link to="/blog" className="text-white hover:text-purple-400 transition-colors font-medium">
-              {t('header.blog')}
+            
+            <Link 
+              to="/planes" 
+              className="px-3 py-2 rounded-md transition-colors font-medium text-foreground hover:text-primary hover:bg-primary/10"
+            >
+              {t("Planes")}
             </Link>
             
-            <Link to="/contacto" className="text-white hover:text-purple-400 transition-colors font-medium">
-              {t('header.contact')}
+            <Link 
+              to="/contacto" 
+              className="px-3 py-2 rounded-md transition-colors font-medium text-foreground hover:text-primary hover:bg-primary/10"
+            >
+              {t("Contacto")}
             </Link>
             
-            <LanguageSelector className="ml-2" />
+            <div className="ml-2 flex items-center space-x-2">
+              <LanguageToggle />
+              <ThemeToggle />
+            </div>
             
             <Button 
-              className="bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white transition-colors rounded-lg shadow-lg shadow-purple-900/20 px-5"
-              onClick={() => window.open('/contacto', '_self')}
+              className="ml-3 shadow-lg shadow-purple-900/20 px-5"
+              size="sm"
+              onClick={() => window.open(calendlyUrl, '_blank')}
             >
-              {t('header.scheduleDemo')}
+              {t("Agendar llamada")}
             </Button>
           </nav>
 
           {/* Mobile menu button */}
-          <Button 
-            className="md:hidden bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white transition-colors rounded-lg shadow-lg shadow-purple-900/20"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
-          >
-            {mobileMenuOpen ? (
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
-          </Button>
+          <div className="flex md:hidden items-center gap-3">
+            <ThemeToggle />
+            <LanguageToggle />
+            <button
+              type="button"
+              className="p-2 rounded-md text-foreground hover:bg-primary/10 transition-colors"
+              onClick={toggleMobileMenu}
+              aria-expanded={mobileMenuOpen}
+              aria-label={mobileMenuOpen ? t("Cerrar menú") : t("Abrir menú")}
+            >
+              <span className="sr-only">{mobileMenuOpen ? t("Cerrar menú") : t("Abrir menú")}</span>
+              {mobileMenuOpen ? (
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile menu */}
         <div 
-          className={`${mobileMenuOpen ? 'opacity-100 max-h-[500px]' : 'opacity-0 max-h-0 pointer-events-none'} md:hidden transition-all duration-300 ease-in-out overflow-hidden`}
+          className={`fixed inset-0 bg-background/95 backdrop-blur-sm z-40 transform transition-transform duration-300 ease-in-out ${
+            mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          } md:hidden`}
         >
-          <div className="py-2 space-y-1">
-            <MobileDropdown 
-              title={t('header.services')}
-              isActive={activeDropdown === 'mobileServicios'}
-              toggleDropdown={() => toggleDropdown('mobileServicios')}
-              links={serviceLinks}
-            />
-
-            <MobileDropdown 
-              title={t('header.company')}
-              isActive={activeDropdown === 'mobileEmpresa'}
-              toggleDropdown={() => toggleDropdown('mobileEmpresa')}
-              links={companyLinks}
-            />
-
-            <Link to="/blog" className="block py-3 px-4 text-white hover:bg-purple-600/10 rounded-lg transition-colors">
-              {t('header.blog')}
-            </Link>
-            
-            <Link to="/contacto" className="block py-3 px-4 text-white hover:bg-purple-600/10 rounded-lg transition-colors">
-              {t('header.contact')}
-            </Link>
-
-            <div className="px-4 py-3">
-              <LanguageSelector />
+          <div className="flex flex-col h-full overflow-y-auto pt-16 pb-6 px-4">
+            <div className="space-y-1 mb-6">
+              <MobileDropdown 
+                title={t("Servicios")} 
+                isActive={activeDropdown === 'servicios-mobile'} 
+                toggleDropdown={handleServiciosMobileToggle} 
+                links={translatedServiciosLinks} 
+              />
+              <Link 
+                to="/planes" 
+                className="flex items-center py-3 px-4 text-foreground hover:bg-primary/10 rounded-lg transition-colors font-medium"
+                onClick={toggleMobileMenu}
+              >
+                {t("Planes")}
+              </Link>
+              <Link 
+                to="/contacto" 
+                className="flex items-center py-3 px-4 text-foreground hover:bg-primary/10 rounded-lg transition-colors font-medium"
+                onClick={toggleMobileMenu}
+              >
+                {t("Contacto")}
+              </Link>
             </div>
             
-            <div className="px-4 py-3">
+            <div className="mt-auto px-4">
               <Button 
-                className="w-full bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white transition-colors rounded-lg shadow-lg shadow-purple-900/20 py-3"
-                onClick={() => window.open('/contacto', '_self')}
+                onClick={() => {
+                  window.open(calendlyUrl, '_blank');
+                  toggleMobileMenu();
+                }}
+                className="w-full py-2.5"
               >
-                {t('header.scheduleDemo')}
+                {t("Agendar llamada")}
               </Button>
             </div>
           </div>
@@ -238,4 +317,4 @@ export const Header = (): JSX.Element => {
       </div>
     </header>
   );
-}; 
+}); 

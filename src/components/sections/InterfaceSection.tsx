@@ -1,111 +1,191 @@
 import React, { useState } from "react";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "../../hooks/useTranslation";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const InterfaceSection = (): JSX.Element => {
   const { t } = useTranslation();
-  const [isHovered, setIsHovered] = useState(false);
+  const [activeStep, setActiveStep] = useState(0);
   
+  const workflowSteps = [
+    {
+      title: "Reunión de diagnóstico",
+      description: "Entendemos tu negocio, objetivos y necesidades específicas para crear una estrategia personalizada.",
+      icon: (
+        <svg className="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+        </svg>
+      ),
+      image: "/src/assets/images/cta/10.svg"
+    },
+    {
+      title: "Kickoff",
+      description: "Definimos metas concretas, establecemos accesos necesarios y acordamos plazos de entrega realistas.",
+      icon: (
+        <svg className="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      ),
+      image: "/src/assets/images/cta/Goals.svg"
+    },
+    {
+      title: "Desarrollo",
+      description: "Diseñamos, programamos e integramos soluciones personalizadas que se ajustan a tus necesidades específicas.",
+      icon: (
+        <svg className="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        </svg>
+      ),
+      image: "/src/assets/images/cta/cube-helix 1.svg"
+    },
+    {
+      title: "Seguimiento",
+      description: "Realizamos optimización constante de resultados y proponemos mejoras adicionales para maximizar tu inversión.",
+      icon: (
+        <svg className="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+      ),
+      image: "/src/assets/images/cta/Stonks.svg"
+    }
+  ];
+
   return (
-    <div className="w-full py-24 bg-gradient-to-b from-black to-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="proceso" className="w-full py-24 relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-purple-50/30 dark:to-purple-900/10 -z-10"></div>
+      
+      {/* Decorative blurred circles */}
+      <div className="absolute top-40 -left-40 w-96 h-96 bg-purple-100 dark:bg-purple-900/20 rounded-full filter blur-3xl opacity-30 -z-10 animate-blob"></div>
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-purple-200 dark:bg-purple-900/30 rounded-full filter blur-3xl opacity-30 -z-10 animate-blob animation-delay-2000"></div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex flex-col items-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-700 mb-6 text-center">
-            {t('interfaceSection.title')}
+          <span className="px-4 py-1 rounded-full text-sm font-medium bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300 mb-4">
+            {t("Proceso")}
+          </span>
+          
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-foreground">
+            {t("¿Cómo trabajamos?")}
           </h2>
-          <p className="max-w-2xl text-gray-300 text-center text-lg">
-            {t('interfaceSection.subtitle')}
+          
+          <p className="max-w-2xl text-center text-lg text-muted-foreground">
+            {t("Un proceso simple y efectivo para transformar tu negocio con tecnología de vanguardia")}
           </p>
         </div>
         
-        <div className="relative">
-          {/* Decorative elements */}
-          <div className="absolute -top-10 -left-10 w-64 h-64 bg-purple-500/10 rounded-full filter blur-3xl"></div>
-          <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-blue-500/10 rounded-full filter blur-3xl"></div>
+        {/* Interactive step navigator */}
+        <div className="relative mb-12">
+          <div className="hidden md:block absolute left-0 right-0 top-1/2 transform -translate-y-1/2 h-2 bg-gray-200 dark:bg-gray-800 rounded-full">
+            <div 
+              className="h-full bg-gradient-to-r from-purple-500 to-purple-700 rounded-full transition-all duration-500 ease-in-out"
+              style={{ width: `${(activeStep / (workflowSteps.length - 1)) * 100}%` }}
+            ></div>
+          </div>
           
-          {/* Main image with shadow and border effects */}
-          <div 
-            className="relative z-10 rounded-xl overflow-hidden border border-gray-800 shadow-2xl shadow-purple-900/20"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <img 
-              src="/src/assets/images/interface/MOCKUP 6.jpg"
-              alt={t('interfaceSection.interface.alt')} 
-              className={`w-full h-auto object-cover transition-transform duration-500 ${isHovered ? 'scale-110 blur-sm' : 'scale-100'}`}
-              onError={(e) => {
-                e.currentTarget.src = "https://via.placeholder.com/1200x700/1a1a2e/ffffff?text=Business+Transformation";
-              }}
-            />
-            
-            {/* Overlay gradient */}
-            <div className={`absolute inset-0 bg-gradient-to-t from-black/80 to-transparent pointer-events-none transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-80'}`}></div>
-            
-            {/* Hover content */}
-            <div className={`absolute inset-0 flex flex-col items-center justify-center p-8 transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
-              <h3 className="text-white text-2xl md:text-3xl font-bold mb-4 text-center">
-                {t('interfaceSection.hoverContent.title')}
-              </h3>
-              <p className="text-gray-200 text-md md:text-lg mb-6 text-center max-w-2xl">
-                {t('interfaceSection.hoverContent.description')}
-              </p>
-              <div className="inline-block bg-purple-700 text-white px-6 py-2 rounded-full font-medium">
-                {t('interfaceSection.hoverContent.tagline')}
-              </div>
-            </div>
-            
-            {/* Feature highlights - shown when not hovered */}
-            <div className={`absolute bottom-0 left-0 right-0 p-8 transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'}`}>
-              <div className="grid grid-cols-3 gap-4">
-                <div className="bg-black/60 backdrop-blur-sm rounded-lg p-4 border border-gray-800/50">
-                  <h3 className="text-white font-medium text-sm mb-1">{t('interfaceSection.features.0.title')}</h3>
-                  <p className="text-gray-300 text-xs">{t('interfaceSection.features.0.description')}</p>
+          <div className="flex flex-col md:flex-row justify-between relative">
+            {workflowSteps.map((step, index) => (
+              <div 
+                key={index}
+                className="flex flex-col items-center mb-10 md:mb-0 cursor-pointer group"
+                onClick={() => setActiveStep(index)}
+              >
+                <div 
+                  className={`w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4 z-10 transition-all duration-300 transform 
+                    ${activeStep >= index 
+                      ? 'bg-gradient-to-br from-purple-500 to-purple-700 scale-110 shadow-lg shadow-purple-500/20' 
+                      : 'bg-gray-300 dark:bg-gray-700 group-hover:bg-gray-400 dark:group-hover:bg-gray-600'}`}
+                >
+                  {index + 1}
                 </div>
-                <div className="bg-black/60 backdrop-blur-sm rounded-lg p-4 border border-gray-800/50">
-                  <h3 className="text-white font-medium text-sm mb-1">{t('interfaceSection.features.1.title')}</h3>
-                  <p className="text-gray-300 text-xs">{t('interfaceSection.features.1.description')}</p>
-                </div>
-                <div className="bg-black/60 backdrop-blur-sm rounded-lg p-4 border border-gray-800/50">
-                  <h3 className="text-white font-medium text-sm mb-1">{t('interfaceSection.features.2.title')}</h3>
-                  <p className="text-gray-300 text-xs">{t('interfaceSection.features.2.description')}</p>
+                <div className={`text-center transition-colors font-medium ${
+                  activeStep === index 
+                    ? 'text-purple-700 dark:text-purple-400' 
+                    : 'text-gray-600 dark:text-gray-400 group-hover:text-gray-800 dark:group-hover:text-gray-300'
+                }`}>
+                  {t(step.title)}
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
         
-        {/* Additional features with icons */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-          <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-800 hover:border-purple-900/30 transition-colors">
-            <div className="bg-purple-900/20 rounded-lg p-3 w-12 h-12 flex items-center justify-center mb-4">
-              <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-              </svg>
-            </div>
-            <h3 className="text-white font-medium text-lg mb-2">{t('interfaceSection.additionalFeatures.0.title')}</h3>
-            <p className="text-gray-400">{t('interfaceSection.additionalFeatures.0.description')}</p>
-          </div>
-          
-          <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-800 hover:border-purple-900/30 transition-colors">
-            <div className="bg-purple-900/20 rounded-lg p-3 w-12 h-12 flex items-center justify-center mb-4">
-              <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-              </svg>
-            </div>
-            <h3 className="text-white font-medium text-lg mb-2">{t('interfaceSection.additionalFeatures.1.title')}</h3>
-            <p className="text-gray-400">{t('interfaceSection.additionalFeatures.1.description')}</p>
-          </div>
-          
-          <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-800 hover:border-purple-900/30 transition-colors">
-            <div className="bg-purple-900/20 rounded-lg p-3 w-12 h-12 flex items-center justify-center mb-4">
-              <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <h3 className="text-white font-medium text-lg mb-2">{t('interfaceSection.additionalFeatures.2.title')}</h3>
-            <p className="text-gray-400">{t('interfaceSection.additionalFeatures.2.description')}</p>
-          </div>
+        {/* Step details */}
+        <div className="mb-10">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeStep}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+              className="rounded-2xl shadow-xl transition-all duration-500 ease-in-out transform bg-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 border border-gray-100 dark:border-gray-700 shadow-gray-200/40 dark:shadow-none overflow-hidden"
+            >
+              <div className="md:grid md:grid-cols-5 md:gap-8">
+                <div className="md:col-span-2 bg-purple-50 dark:bg-purple-900/20 relative h-64 md:h-full flex items-center justify-center">
+                  <div className="absolute inset-0 opacity-10 bg-gradient-pattern"></div>
+                  <img 
+                    src={workflowSteps[activeStep].image} 
+                    alt={`Step ${activeStep + 1} illustration`}
+                    className="w-40 h-40 object-contain relative z-10"
+                  />
+                </div>
+                
+                <div className="p-8 md:p-10 md:col-span-3">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center bg-purple-100 dark:bg-purple-900/30">
+                      {workflowSteps[activeStep].icon}
+                    </div>
+                    
+                    <h3 className="text-2xl font-bold text-foreground">
+                      {activeStep + 1}. {t(workflowSteps[activeStep].title)}
+                    </h3>
+                  </div>
+                  
+                  <p className="text-lg text-muted-foreground">
+                    {t(workflowSteps[activeStep].description)}
+                  </p>
+                  
+                  <div className="mt-8 pt-6 border-t border-gray-100 dark:border-gray-700/50 flex justify-between">
+                    <button 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setActiveStep(prev => Math.max(0, prev - 1));
+                      }}
+                      disabled={activeStep === 0}
+                      className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all
+                        ${activeStep === 0
+                          ? 'opacity-50 cursor-not-allowed'
+                          : 'bg-gray-100 hover:bg-gray-200 text-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white'}`}
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                      </svg>
+                      {t("Anterior")}
+                    </button>
+                    
+                    <button 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setActiveStep(prev => Math.min(workflowSteps.length - 1, prev + 1));
+                      }}
+                      disabled={activeStep === workflowSteps.length - 1}
+                      className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all
+                        ${activeStep === workflowSteps.length - 1
+                          ? 'opacity-50 cursor-not-allowed'
+                          : 'bg-purple-600 hover:bg-purple-700 text-white shadow-md shadow-purple-500/20'}`}
+                    >
+                      {t("Siguiente")}
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </div>
   );
-}; 
+};

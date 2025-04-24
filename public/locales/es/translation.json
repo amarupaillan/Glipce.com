@@ -1158,5 +1158,345 @@
     "invoiceManagement": "Gestión Automatizada de Facturas",
     "strategicConsulting": "Consultoría Estratégica",
     "socialMediaViral": "Gestión Viral de Redes Sociales"
+  },
+  "contactPage": {
+    "title": "Contacto",
+    "subtitle": "¿Listo para transformar su empresa? Complete el formulario y nos pondremos en contacto con usted.",
+    "formTitle": "Formulario de Contacto",
+    "email": {
+      "title": "Email",
+      "description": "Envíenos un mensaje directo"
+    },
+    "phone": {
+      "title": "Teléfono",
+      "description": "De lunes a viernes, 9:00 - 18:00"
+    },
+    "chat": {
+      "title": "Chat en vivo",
+      "description": "Soporte en tiempo real",
+      "button": "Iniciar chat",
+      "devMessage": "Función de chat en desarrollo"
+    }
+  },
+  "blog": {
+    "article": {
+      "loadError": "Artículo no encontrado",
+      "loadErrorDescription": "El artículo que estás buscando no existe o ha sido movido.",
+      "backButton": "Volver al blog",
+      "loading": "Cargando artículo...",
+      "authorLabel": "Autor",
+      "authorName": "Carlos Rodríguez",
+      "authorTitle": "Especialista en Automatización e IA",
+      "authorBio": "Carlos es un experto en automatización de procesos e inteligencia artificial con más de 10 años de experiencia ayudando a empresas a implementar soluciones tecnológicas avanzadas.",
+      "readingTimeSuffix": "min de lectura",
+      "tableOfContentsTitle": "Contenido del artículo",
+      "shareArticle": "Compartir este artículo:",
+      "shareLinkCopied": "Enlace copiado al portapapeles",
+      "relatedArticlesTitle": "Artículos relacionados",
+      "fallbackImageAlt": "Imagen alternativa para artículo"
+    },
+    "index": {
+      "title": "Blog de Automatización e IA",
+      "description": "Explora las últimas tendencias, estrategias y casos de éxito en automatización, IA y transformación digital.",
+      "searchPlaceholder": "Buscar artículos...",
+      "allCategories": "Todas las categorías"
+    },
+    "articles": {
+      "beneficios-automatizacion-empresarial": {
+        "title": "7 Beneficios Clave de la Automatización Empresarial en 2024",
+        "category": "Automatización",
+        "date": "20 mayo, 2024",
+        "excerpt": "Descubra cómo la automatización empresarial puede transformar su negocio, aumentar la productividad y reducir costos operativos significativamente.",
+        "tags": ["automatización", "productividad", "eficiencia", "transformación digital"],
+        "tableOfContents": [
+          "Reducción de costos operativos",
+          "Aumento de la productividad",
+          "Mejora de la experiencia del cliente",
+          "Reducción de errores",
+          "Escalabilidad de procesos",
+          "Mayor análisis de datos",
+          "Ventajas competitivas"
+        ],
+        "content": [
+          {
+            "title": "Reducción de costos operativos",
+            "paragraphs": [
+              "La automatización de procesos empresariales permite reducir significativamente los costos operativos al eliminar tareas manuales repetitivas que consumen gran cantidad de tiempo y recursos.",
+              "Las empresas que implementan soluciones de automatización reportan una reducción media del 40% en sus costos operativos relacionados con procesos administrativos. Esta disminución se debe principalmente a la menor necesidad de intervención humana y a la optimización de recursos."
+            ],
+            "imageAlt": "Gráfico mostrando reducción de costos operativos",
+            "imageCaption": "Análisis comparativo de costos antes y después de implementar automatización"
+          },
+          {
+            "title": "Aumento de la productividad",
+            "paragraphs": [
+              "Al automatizar tareas repetitivas, los empleados pueden concentrarse en actividades de mayor valor que requieren creatividad, pensamiento estratégico y habilidades interpersonales.",
+              "Según estudios recientes, las organizaciones que implementan automatización inteligente experimentan un aumento medio del 35% en la productividad general, permitiendo completar más tareas en menos tiempo y con mayor calidad."
+            ]
+          }
+        ]
+      },
+      "inteligencia-artificial-servicio-cliente": {
+        "title": "Cómo Implementar IA en el Servicio al Cliente para Mejorar la Satisfacción",
+        "category": "Inteligencia Artificial",
+        "date": "15 mayo, 2024",
+        "excerpt": "La inteligencia artificial está revolucionando el servicio al cliente. Descubra estrategias prácticas para implementar IA y aumentar la satisfacción de sus clientes.",
+        "tags": ["inteligencia artificial", "servicio al cliente", "chatbots", "experiencia cliente"],
+        "tableOfContents": [
+          "El impacto de la IA en servicio al cliente",
+          "Implementación de chatbots inteligentes",
+          "Personalización a través de IA",
+          "Análisis predictivo de necesidades",
+          "Casos de éxito"
+        ],
+        "content": [
+          {
+            "title": "El impacto de la IA en servicio al cliente",
+            "paragraphs": [
+              "La inteligencia artificial ha transformado radicalmente la manera en que las empresas interactúan con sus clientes, permitiendo respuestas más rápidas, personalizadas y efectivas a cualquier hora del día.",
+              "Según un estudio de Gartner, las organizaciones que implementan IA en su servicio al cliente experimentan una reducción del 70% en el tiempo de resolución de consultas y un aumento del 25% en la satisfacción general."
+            ],
+            "imageAlt": "Interfaz de servicio al cliente con IA",
+            "imageCaption": "Sistema de atención al cliente potenciado por inteligencia artificial"
+          }
+        ]
+      },
+      "big-data-toma-decisiones": {
+        "title": "Big Data: La Clave para la Toma de Decisiones Estratégicas",
+        "category": "Análisis de Datos",
+        "date": "10 mayo, 2024",
+        "excerpt": "El análisis de grandes volúmenes de datos está revolucionando la forma en que las empresas toman decisiones. Descubra cómo implementar Big Data en su estrategia empresarial.",
+        "tags": ["big data", "análisis", "toma de decisiones", "estrategia"],
+        "tableOfContents": [
+          "Fundamentos del Big Data",
+          "Infraestructura necesaria",
+          "Análisis predictivo",
+          "Visualización de datos",
+          "Casos prácticos"
+        ],
+        "content": [
+          {
+            "title": "Fundamentos del Big Data",
+            "paragraphs": [
+              "El Big Data se refiere al análisis de conjuntos de datos extremadamente grandes y complejos que las aplicaciones de procesamiento de datos tradicionales no pueden manejar adecuadamente.",
+              "Este enfoque permite identificar patrones, tendencias y correlaciones ocultas que pueden transformar la forma en que una empresa toma decisiones estratégicas y operativas."
+            ]
+          }
+        ]
+      },
+      "automatizacion-procesos-rpa": {
+        "title": "RPA: La Revolución Silenciosa en la Automatización de Procesos",
+        "category": "Automatización",
+        "date": "5 mayo, 2024",
+        "excerpt": "La Automatización Robótica de Procesos (RPA) está transformando la manera en que las empresas gestionan tareas repetitivas. Descubra cómo implementarla efectivamente.",
+        "tags": ["RPA", "automatización", "procesos", "robótica"],
+        "tableOfContents": [
+          "¿Qué es RPA?",
+          "Beneficios principales",
+          "Casos de uso comunes",
+          "Implementación exitosa",
+          "El futuro del RPA"
+        ],
+        "content": [
+          {
+            "title": "¿Qué es RPA?",
+            "paragraphs": [
+              "La Automatización Robótica de Procesos (RPA) es una tecnología que permite configurar software o 'robots' para capturar e interpretar aplicaciones existentes con el fin de procesar transacciones, manipular datos, desencadenar respuestas y comunicarse con otros sistemas digitales.",
+              "A diferencia de otras formas de automatización, RPA puede adaptarse a casi cualquier proceso de negocio sin necesidad de cambiar la infraestructura existente."
+            ]
+          }
+        ]
+      },
+      "ciberseguridad-empresarial-2024": {
+        "title": "Ciberseguridad Empresarial: Protegiendo su Negocio en la Era Digital",
+        "category": "Seguridad",
+        "date": "1 mayo, 2024",
+        "excerpt": "Con el aumento de los ciberataques, proteger los activos digitales se ha vuelto crucial. Descubra las mejores prácticas en ciberseguridad para empresas.",
+        "tags": ["ciberseguridad", "protección", "datos", "seguridad informática"],
+        "tableOfContents": [
+          "Amenazas actuales",
+          "Estrategias de protección",
+          "Gestión de incidentes",
+          "Capacitación del personal",
+          "Tecnologías emergentes"
+        ],
+        "content": [
+          {
+            "title": "Amenazas actuales",
+            "paragraphs": [
+              "El panorama de amenazas cibernéticas evoluciona constantemente, con atacantes desarrollando métodos cada vez más sofisticados para vulnerar la seguridad de las empresas.",
+              "Según informes recientes, los ataques de ransomware aumentaron un 150% en el último año, mientras que las filtraciones de datos afectaron a más de 35 millones de registros empresariales a nivel mundial."
+            ]
+          }
+        ]
+      },
+      "cloud-computing-transformacion-digital": {
+        "title": "Cloud Computing: El Pilar Fundamental de la Transformación Digital",
+        "category": "Tecnología",
+        "date": "25 abril, 2024",
+        "excerpt": "La migración a la nube está redefiniendo cómo operan las empresas. Explore las ventajas, desafíos y estrategias para una implementación exitosa del cloud computing.",
+        "tags": ["cloud", "SaaS", "transformación digital", "infraestructura"],
+        "tableOfContents": [
+          "Modelos de servicio en la nube",
+          "Beneficios empresariales",
+          "Consideraciones de seguridad",
+          "Estrategias de migración",
+          "Tendencias futuras"
+        ],
+        "content": [
+          {
+            "title": "Modelos de servicio en la nube",
+            "paragraphs": [
+              "El cloud computing ofrece diversos modelos de servicio que las empresas pueden adoptar según sus necesidades específicas: IaaS (Infraestructura como Servicio), PaaS (Plataforma como Servicio) y SaaS (Software como Servicio).",
+              "Cada modelo proporciona diferentes niveles de control, flexibilidad y responsabilidad compartida entre el proveedor y el cliente, permitiendo a las organizaciones elegir la opción que mejor se adapte a sus objetivos estratégicos y operativos."
+            ]
+          }
+        ]
+      },
+      "blockchain-aplicaciones-empresariales": {
+        "title": "Blockchain Más Allá de las Criptomonedas: Aplicaciones Empresariales",
+        "category": "Innovación",
+        "date": "20 abril, 2024",
+        "excerpt": "La tecnología blockchain está encontrando aplicaciones revolucionarias en diversos sectores empresariales. Descubra cómo esta tecnología puede transformar sus procesos de negocio.",
+        "tags": ["blockchain", "contratos inteligentes", "trazabilidad", "descentralización"],
+        "tableOfContents": [
+          "Fundamentos de blockchain",
+          "Contratos inteligentes",
+          "Cadena de suministro",
+          "Finanzas descentralizadas",
+          "Casos de éxito"
+        ],
+        "content": [
+          {
+            "title": "Fundamentos de blockchain",
+            "paragraphs": [
+              "Blockchain es una tecnología de registro distribuido que permite almacenar información de manera inmutable, transparente y descentralizada, eliminando la necesidad de intermediarios y aumentando la confianza entre las partes.",
+              "Su arquitectura única garantiza que una vez que los datos se registran, no pueden ser alterados sin que todos los participantes de la red sean notificados, lo que proporciona un nivel sin precedentes de seguridad y trazabilidad."
+            ]
+          }
+        ]
+      },
+      "inteligencia-artificial-generativa-empresas": {
+        "title": "Inteligencia Artificial Generativa: Nuevas Oportunidades para Empresas",
+        "category": "Inteligencia Artificial",
+        "date": "15 abril, 2024",
+        "excerpt": "La IA generativa está creando nuevas posibilidades para la innovación empresarial. Explore cómo esta tecnología puede potenciar la creatividad y eficiencia en su organización.",
+        "tags": ["IA generativa", "innovación", "creatividad", "automatización"],
+        "tableOfContents": [
+          "Qué es la IA generativa",
+          "Aplicaciones en marketing",
+          "Diseño y desarrollo de productos",
+          "Optimización de contenidos",
+          "Implementación práctica"
+        ],
+        "content": [
+          {
+            "title": "Qué es la IA generativa",
+            "paragraphs": [
+              "La Inteligencia Artificial Generativa se refiere a algoritmos capaces de crear contenido nuevo y original, como texto, imágenes, música o diseños, tras haber sido entrenados con grandes cantidades de datos existentes.",
+              "A diferencia de la IA tradicional que se centra en analizar y clasificar información, la IA generativa puede producir resultados completamente nuevos que no existían previamente, abriendo enormes posibilidades para la innovación empresarial."
+            ],
+            "imageAlt": "Representación visual de IA generativa",
+            "imageCaption": "Visualización de patrones generados por IA creativa"
+          }
+        ]
+      }
+    }
+  },
+  "form": {
+    "next": "Siguiente",
+    "previous": "Atrás",
+    "submit": "Enviar",
+    "selectOption": "Selecciona una opción",
+    "errors": {
+      "required": "Este campo es obligatorio",
+      "generic": "Ha ocurrido un error",
+      "invalidEmail": "Por favor ingresa un correo electrónico válido",
+      "phoneFormat": "Por favor ingresa un número de teléfono válido"
+    },
+    "hints": {
+      "keyboardSubmit": "Presiona Enter para continuar",
+      "textareaSubmit": "Presiona Ctrl+Enter para continuar"
+    },
+    "success": {
+      "title": "¡Gracias!",
+      "message": "Tu mensaje ha sido enviado exitosamente. Nos pondremos en contacto contigo pronto.",
+      "restart": "Enviar otro mensaje"
+    },
+    "error": {
+      "title": "¡Ups!",
+      "message": "Hubo un problema al enviar tu mensaje.",
+      "retry": "Intentar de nuevo"
+    },
+    "fields": {
+      "name": {
+        "label": "¿Cuál es tu nombre?",
+        "placeholder": "Escribe tu nombre completo"
+      },
+      "email": {
+        "label": "¿Cuál es tu correo electrónico?",
+        "placeholder": "correo@ejemplo.com"
+      },
+      "phone": {
+        "label": "¿Cuál es tu número de teléfono?",
+        "placeholder": "Escribe tu número de teléfono"
+      },
+      "service": {
+        "label": "¿Qué servicio te interesa?",
+        "placeholder": "Selecciona un servicio",
+        "options": {
+          "automation": "Automatización de Procesos",
+          "intelligence": "Inteligencia de Negocio",
+          "support": "Soporte al Cliente con IA",
+          "invoices": "Gestión de Facturas",
+          "social": "Social Media Viral Management"
+        }
+      },
+      "message": {
+        "label": "¿En qué podemos ayudarte?",
+        "placeholder": "Describe brevemente tu proyecto o consulta"
+      },
+      "company": {
+        "label": "¿Para qué empresa trabajas?",
+        "placeholder": "Escribe el nombre de tu empresa"
+      },
+      "role": {
+        "label": "¿Cuál es tu cargo en la empresa?",
+        "placeholder": "Ej. Gerente de Marketing, CEO, etc."
+      },
+      "budget": {
+        "label": "¿Cuál es tu presupuesto estimado?",
+        "placeholder": "Selecciona un rango de presupuesto",
+        "options": {
+          "under5k": "Menos de $5,000",
+          "5kTo10k": "$5,000 - $10,000",
+          "10kTo25k": "$10,000 - $25,000",
+          "25kTo50k": "$25,000 - $50,000",
+          "over50k": "Más de $50,000"
+        }
+      },
+      "timeline": {
+        "label": "¿Cuál es tu plazo para este proyecto?",
+        "placeholder": "Selecciona un plazo",
+        "options": {
+          "asap": "Lo antes posible",
+          "1month": "En 1 mes",
+          "3months": "En 3 meses",
+          "6months": "En 6 meses",
+          "flexible": "Flexible"
+        }
+      },
+      "source": {
+        "label": "¿Cómo nos conociste?",
+        "placeholder": "Selecciona una opción",
+        "options": {
+          "search": "Motor de búsqueda",
+          "social": "Redes sociales",
+          "referral": "Recomendación",
+          "advertising": "Publicidad",
+          "other": "Otro"
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,192 @@
+:root {
+  /* Variables de colores para el modo claro (default) */
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  
+  --primary: #8a2be2; /* Purple as the primary color */
+  --primary-foreground: #ffffff;
+  
+  --secondary: #f3f4f6; /* gray-100 */
+  --secondary-foreground: #1f2937; /* gray-800 */
+  
+  --muted: #f3f4f6; /* gray-100 */
+  --muted-foreground: #6b7280; /* gray-500 */
+  
+  --accent: #8a2be2; /* Purple accent */
+  --accent-foreground: #ffffff;
+  
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  
+  --border: #e5e7eb; /* gray-200 */
+  --input: #e5e7eb; /* gray-200 */
+  
+  --ring: #8a2be2; /* Purple ring */
+  
+  --radius: 0.5rem;
+
+  /* Custom colors for UI elements */
+  --hero-gradient-start: #ffffff;
+  --hero-gradient-middle: rgba(138, 43, 226, 0.4); /* Purple with opacity */
+  --hero-gradient-end: #ffffff;
+  
+  --header-bg: rgba(255, 255, 255, 0.8);
+  --header-text: #1a1a1a;
+  --header-accent: #8a2be2;
+  
+  --button-primary-bg: #8a2be2;
+  --button-primary-text: #ffffff;
+  --button-secondary-bg: transparent;
+  --button-secondary-text: #1a1a1a;
+  --button-secondary-border: rgba(26, 26, 26, 0.3);
+  
+  --badge-bg: rgba(138, 43, 226, 0.1);
+  --badge-text: #8a2be2;
+  --badge-border: rgba(138, 43, 226, 0.3);
+}
+
+[data-theme="dark"] {
+  /* Variables de colores para el modo oscuro */
+  --background: #121212;
+  --foreground: #f3f4f6; /* gray-100 */
+  
+  --primary: #8a2be2; /* Keep purple as primary in dark mode too */
+  --primary-foreground: #ffffff;
+  
+  --secondary: #1f2937; /* gray-800 */
+  --secondary-foreground: #f3f4f6; /* gray-100 */
+  
+  --muted: #1f2937; /* gray-800 */
+  --muted-foreground: #9ca3af; /* gray-400 */
+  
+  --accent: #8a2be2; /* Keep purple as accent */
+  --accent-foreground: #ffffff;
+  
+  --card: #1e1e1e;
+  --card-foreground: #f3f4f6; /* gray-100 */
+  
+  --border: #374151; /* gray-700 */
+  --input: #374151; /* gray-700 */
+  
+  --ring: #8a2be2; /* Keep purple ring */
+
+  /* Custom colors for UI elements in dark mode */
+  --hero-gradient-start: #121212;
+  --hero-gradient-middle: rgba(138, 43, 226, 0.4); /* Purple with opacity */
+  --hero-gradient-end: #121212;
+  
+  --header-bg: rgba(18, 18, 18, 0.8);
+  --header-text: #ffffff;
+  --header-accent: #8a2be2;
+  
+  --button-primary-bg: #8a2be2;
+  --button-primary-text: #ffffff;
+  --button-secondary-bg: transparent;
+  --button-secondary-text: #ffffff;
+  --button-secondary-border: rgba(255, 255, 255, 0.3);
+  
+  --badge-bg: rgba(0, 0, 0, 0.5);
+  --badge-text: #ffffff;
+  --badge-border: rgba(138, 43, 226, 0.4);
+}
+
+/* Estilos globales */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Clases para componentes comunes */
+.bg-background {
+  background-color: var(--background);
+}
+
+.text-foreground {
+  color: var(--foreground);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.border-color {
+  border-color: var(--border);
+}
+
+.card {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+/* Custom utility classes for theming */
+.bg-hero-gradient {
+  background-image: linear-gradient(to bottom, var(--hero-gradient-start), var(--hero-gradient-middle), var(--hero-gradient-end));
+}
+
+.header-bg {
+  background-color: var(--header-bg);
+  backdrop-filter: blur(8px);
+}
+
+.header-text {
+  color: var(--header-text);
+}
+
+.header-accent {
+  color: var(--header-accent);
+}
+
+.btn-primary {
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-text);
+}
+
+.btn-secondary {
+  background-color: var(--button-secondary-bg);
+  color: var(--button-secondary-text);
+  border: 1px solid var(--button-secondary-border);
+}
+
+.custom-badge {
+  background-color: var(--badge-bg);
+  color: var(--badge-text);
+  border: 1px solid var(--badge-border);
+}
+
+/* Adaptación para compatibilidad con Tailwind dark: */
+.dark .dark\:bg-background {
+  background-color: var(--background);
+}
+
+.dark .dark\:text-foreground {
+  color: var(--foreground);
+}
+
+.dark .dark\:bg-black {
+  background-color: var(--background);
+}
+
+.dark .dark\:bg-gray-800 {
+  background-color: var(--muted);
+}
+
+.dark .dark\:text-white {
+  color: var(--foreground);
+}
+
+.dark .dark\:border-gray-700 {
+  border-color: var(--border);
+} 
