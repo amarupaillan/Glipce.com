@@ -211,49 +211,71 @@ const translations: Record<Language, NestedTranslations> = {
   es: spanishTranslations
 };
 
+// Flatten nested translations for simpler access
+const flattenTranslations = (obj: any, prefix = ''): Record<string, string> => {
+  return Object.keys(obj).reduce((acc: Record<string, string>, k: string) => {
+    const pre = prefix.length ? `${prefix}.` : '';
+    if (typeof obj[k] === 'object' && obj[k] !== null && !Array.isArray(obj[k])) {
+      Object.assign(acc, flattenTranslations(obj[k], `${pre}${k}`));
+    } else {
+      acc[`${pre}${k}`] = String(obj[k]);
+    }
+    return acc;
+  }, {});
+};
+
+// Create flattened versions of our translations
+const flatEnglishTranslations = flattenTranslations(englishTranslations);
+const flatSpanishTranslations = flattenTranslations(spanishTranslations);
+
+// Flattened translations for direct key access
+const flatTranslations: Record<Language, Record<string, string>> = {
+  en: flatEnglishTranslations,
+  es: flatSpanishTranslations
+};
+
 // Proveedor de traducciones
 export const TranslationProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
     // Intenta obtener el idioma guardado en localStorage, o usa la preferencia del navegador
-    const savedLanguage = localStorage.getItem('language') as Language;
-    if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'es')) {
-      return savedLanguage;
+    try {
+      const savedLanguage = localStorage.getItem('language') as Language;
+      if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'es')) {
+        return savedLanguage;
+      }
+    } catch (error) {
+      console.warn('Error accessing localStorage', error);
     }
     
     // Detecta el idioma del navegador
-    const browserLanguage = navigator.language.split('-')[0];
-    return browserLanguage === 'en' ? 'en' : 'es';
+    try {
+      const browserLanguage = navigator.language.split('-')[0];
+      return browserLanguage === 'en' ? 'en' : 'es';
+    } catch (error) {
+      console.warn('Error detecting browser language', error);
+      return 'es'; // Default fallback
+    }
   });
 
-  // Función para traducir texto - actualizada para manejar claves anidadas
+  // Simplified translation function using flattened translations
   const t = (key: string): string => {
-    // Si la clave contiene puntos, acceder a las propiedades anidadas
-    if (key.includes('.')) {
-      const keys = key.split('.');
-      let value: any = translations[language];
-      
-      // Navegar a través de la estructura anidada
-      for (const k of keys) {
-        if (value && typeof value === 'object' && k in value) {
-          value = value[k];
-        } else {
-          // Si no se encuentra la clave en algún nivel, devolver la clave original
-          return key;
-        }
+    try {
+      // First check the flattened translations (handles nested dot notation)
+      if (flatTranslations[language][key]) {
+        return flatTranslations[language][key];
       }
       
-      // Si el valor final es una cadena, devolverlo
-      if (typeof value === 'string') {
-        return value;
+      // Fall back to direct lookup for simple keys
+      if (translations[language][key] && typeof translations[language][key] === 'string') {
+        return translations[language][key] as string;
       }
       
-      // Si no es una cadena (por ejemplo, es un objeto), devolver la clave original
+      // Fallback to the key itself if not found
+      return key;
+    } catch (error) {
+      console.warn(`Translation error for key "${key}"`, error);
       return key;
     }
-    
-    // Para claves simples, usar el método original
-    const translation = translations[language][key];
-    return typeof translation === 'string' ? translation : key;
   };
 
   // Función para cambiar el idioma
