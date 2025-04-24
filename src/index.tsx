@@ -5,6 +5,7 @@ import { Desktop } from "./screens/Desktop/Desktop";
 import ContactPage from "./pages/contacto";
 import ServiciosPage from "./pages/servicios";
 import PlanesPage from "./pages/planes";
+import { Analytics } from "@vercel/analytics/react";
 
 // Theme configuration
 import { ThemeProvider } from './components/ui/theme-provider';
@@ -97,6 +98,7 @@ const App = () => {
             <Route path="*" element={<Navigate to="https://calendly.com/amarupaillan1966/30min" />} />
           </Routes>
         </BrowserRouter>
+        <Analytics />
       </ThemeProvider>
     </TranslationProvider>
   );
