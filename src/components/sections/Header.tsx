@@ -67,11 +67,11 @@ const MobileDropdown = memo(({
     <div>
       <button 
         onClick={toggleDropdown}
-        className="flex items-center justify-between w-full py-3 px-4 text-foreground hover:bg-primary/10 rounded-lg transition-colors"
+        className="flex items-center justify-between w-full py-4 px-4 text-foreground hover:bg-primary/10 rounded-lg transition-all duration-200 transform hover:translate-x-1"
       >
         <span className="font-medium">{title}</span>
         <svg 
-          className={`w-4 h-4 transition-transform duration-200 ${isActive ? 'rotate-180' : ''}`}
+          className={`w-5 h-5 transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`}
           fill="none" 
           stroke="currentColor" 
           viewBox="0 0 24 24" 
@@ -80,19 +80,21 @@ const MobileDropdown = memo(({
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-      {isActive && (
-        <div className="pl-4 space-y-1 mt-1">
-          {links.map((link, index) => (
-            <Link 
-              key={index} 
-              to={link.to} 
-              className="block py-2 px-4 text-muted-foreground hover:bg-primary/10 hover:text-foreground rounded-lg transition-colors"
-            >
-              {link.text}
-            </Link>
-          ))}
-        </div>
-      )}
+      <div 
+        className={`pl-4 space-y-2 mt-2 overflow-hidden transition-all duration-300 ${
+          isActive ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+        }`}
+      >
+        {links.map((link, index) => (
+          <Link 
+            key={index} 
+            to={link.to} 
+            className="block py-3 px-4 ml-2 text-muted-foreground hover:text-foreground hover:bg-primary/10 rounded-lg transition-all duration-200 transform hover:translate-x-1"
+          >
+            {link.text}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 });
@@ -277,8 +279,19 @@ export const Header = memo((): JSX.Element => {
             mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           } md:hidden`}
         >
-          <div className="flex flex-col h-full overflow-y-auto pt-16 pb-6 px-4">
-            <div className="space-y-1 mb-6">
+          <div className="flex flex-col h-full overflow-y-auto pt-14 pb-6 px-6 max-w-sm ml-auto">
+            {/* Close button at the top right */}
+            <button
+              className="absolute top-4 right-4 p-2 rounded-full bg-muted/50 hover:bg-muted text-foreground transition-colors"
+              onClick={toggleMobileMenu}
+              aria-label={t("Cerrar menú")}
+            >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            
+            <div className="mt-8 space-y-3">
               <MobileDropdown 
                 title={t("Servicios")} 
                 isActive={activeDropdown === 'servicios-mobile'} 
@@ -287,14 +300,14 @@ export const Header = memo((): JSX.Element => {
               />
               <Link 
                 to="/planes" 
-                className="flex items-center py-3 px-4 text-foreground hover:bg-primary/10 rounded-lg transition-colors font-medium"
+                className="flex items-center py-4 px-4 text-foreground hover:bg-primary/10 rounded-lg transition-all duration-200 font-medium transform hover:translate-x-1"
                 onClick={toggleMobileMenu}
               >
                 {t("Planes")}
               </Link>
               <Link 
                 to="/contacto" 
-                className="flex items-center py-3 px-4 text-foreground hover:bg-primary/10 rounded-lg transition-colors font-medium"
+                className="flex items-center py-4 px-4 text-foreground hover:bg-primary/10 rounded-lg transition-all duration-200 font-medium transform hover:translate-x-1"
                 onClick={toggleMobileMenu}
               >
                 {t("Contacto")}
@@ -307,7 +320,7 @@ export const Header = memo((): JSX.Element => {
                   window.open(calendlyUrl, '_blank');
                   toggleMobileMenu();
                 }}
-                className="w-full py-2.5"
+                className="w-full py-3 text-base"
               >
                 {t("Agendar llamada")}
               </Button>

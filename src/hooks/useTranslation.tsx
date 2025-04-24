@@ -138,7 +138,7 @@ const englishTranslations: NestedTranslations = {
   // Homepage sections
   homepage: {
     hero: {
-      title: "Intelligent Digital Transformation for Businesses",
+      title: "Transform Your Business with AI",
       subtitle: "AI-powered automation solutions that optimize processes, reduce costs and accelerate growth",
       cta: "Request a Demo"
     }
