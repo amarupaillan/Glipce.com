@@ -132,6 +132,78 @@ const ServiceSection = ({
 export const ServiciosPage: React.FC = () => {
   const { t } = useTranslation();
   
+  // Datos para servicios de creación de contenido
+  const contentCreationProblems = [
+    {
+      question: "¿Tu contenido actual no genera engagement?",
+      answer: "Muchas empresas publican contenido que no resuena con su audiencia, resultando en bajas tasas de interacción y conversión."
+    },
+    {
+      question: "¿Falta de tiempo para crear contenido regularmente?",
+      answer: "La creación de contenido de calidad requiere tiempo y recursos que muchas empresas simplemente no tienen disponibles internamente."
+    },
+    {
+      question: "¿Tu contenido no refleja la calidad de tu marca?",
+      answer: "Un contenido poco profesional puede dañar tu imagen de marca y reducir la confianza de tus clientes potenciales."
+    }
+  ];
+  
+  const contentCreationSolutions = [
+    "Videos optimizados para cada plataforma",
+    "Estrategia de contenido personalizada",
+    "Copywriting persuasivo",
+    "Diseño gráfico profesional",
+    "Calendario editorial consistente"
+  ];
+
+  // Datos para servicios de desarrollo web
+  const webProblems = [
+    {
+      question: "¿Tu sitio web actual no convierte visitantes en clientes?",
+      answer: "Muchos sitios web están diseñados sin tener en cuenta la experiencia del usuario y los principios de conversión."
+    },
+    {
+      question: "¿Tu página web tarda en cargar o no es responsive?",
+      answer: "Un sitio lento o que no se adapta a dispositivos móviles puede aumentar la tasa de rebote hasta en un 40%."
+    },
+    {
+      question: "¿No tienes forma de capturar leads efectivamente?",
+      answer: "Sin las herramientas adecuadas, estás perdiendo potenciales clientes que visitan tu sitio pero no dan el siguiente paso."
+    }
+  ];
+  
+  const webSolutions = [
+    "Diseño web personalizado y responsive",
+    "Optimización para conversión (CRO)",
+    "Integraciones con CRM y herramientas de marketing",
+    "Formularios y embudos de captación de leads",
+    "Optimización de velocidad de carga"
+  ];
+
+  // Datos para servicios de agentes IA
+  const aiProblems = [
+    {
+      question: "¿No puedes dar atención 24/7 a tus clientes?",
+      answer: "La falta de disponibilidad fuera de horario comercial puede resultar en la pérdida de clientes potenciales y ventas."
+    },
+    {
+      question: "¿Procesos repetitivos consumen el tiempo de tu equipo?",
+      answer: "Tu equipo dedica horas a tareas administrativas que podrían automatizarse, reduciendo su productividad."
+    },
+    {
+      question: "¿Dificultad para escalar tu servicio al cliente?",
+      answer: "Contratar más personal para soporte es costoso, pero no hacerlo limita tu capacidad para crecer."
+    }
+  ];
+  
+  const aiSolutions = [
+    "Asistentes virtuales personalizados para tu negocio",
+    "Automatización de procesos de atención al cliente",
+    "Integración con tus sistemas existentes",
+    "Aprendizaje continuo y mejora constante",
+    "Analítica detallada de conversaciones e interacciones"
+  ];
+  
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
@@ -153,90 +225,33 @@ export const ServiciosPage: React.FC = () => {
         </div>
 
         <ServiceSection 
-          id="contenido"
-          subtitle="Producción profesional"
-          title="Creación de Contenido"
-          imageSrc="/src/assets/images/servicios/Content creation.png"
+          id="content-creation"
+          title="Producción profesional"
+          subtitle="Creación de Contenido"
+          imageSrc="/assets/images/servicios/Content creation.png"
+          problems={contentCreationProblems}
+          solutions={contentCreationSolutions}
           color="purple"
-          problems={[
-            {
-              question: "¿No tienes tiempo para crear contenido constantemente?",
-              answer: "La mayoría de los negocios saben que necesitan publicar en redes sociales, pero el día a día los consume y terminan abandonando esta tarea crucial."
-            },
-            {
-              question: "¿Tu contenido no genera suficiente engagement?",
-              answer: "Publicar por publicar no funciona. Sin una estrategia y calidad profesional, tus videos pasan desapercibidos entre miles de contenidos."
-            },
-            {
-              question: "¿Inviertes en publicidad pero no logras conversiones?",
-              answer: "Sin un contenido que conecte emocionalmente con tu audiencia, incluso las mejores campañas publicitarias fallan en convertir."
-            }
-          ]}
-          solutions={[
-            "Creamos guiones profesionales enfocados en tu audiencia y objetivos de negocio",
-            "Nos encargamos de la grabación in situ con equipo profesional, sin molestias para ti",
-            "Editamos y optimizamos los videos para cada plataforma (Instagram, TikTok, YouTube)",
-            "Implementamos estrategias de storytelling que generan conexión emocional",
-            "Te entregamos calendario editorial y recomendaciones para maximizar el alcance"
-          ]}
         />
 
         <ServiceSection 
-          id="landing"
-          subtitle="Diseño y desarrollo"
-          title="Landing Pages a Medida"
-          imageSrc="/src/assets/images/servicios/LAding pages.jpeg"
+          id="web-development"
+          title="Diseño y desarrollo"
+          subtitle="Landing Pages a Medida"
+          imageSrc="/assets/images/servicios/LAding pages.jpeg"
+          problems={webProblems}
+          solutions={webSolutions}
           color="blue"
-          problems={[
-            {
-              question: "¿Tu sitio web actual no convierte visitantes en clientes?",
-              answer: "Muchos sitios web son bonitos pero no están diseñados con un embudo de conversión claro, por lo que pierden potenciales clientes en cada visita."
-            },
-            {
-              question: "¿Tus campañas generan tráfico pero pocas ventas?",
-              answer: "Sin una landing page específica para cada campaña, estás desperdiciando tu inversión en publicidad al enviar usuarios a páginas genéricas."
-            },
-            {
-              question: "¿No sabes qué está funcionando y qué no en tu sitio?",
-              answer: "Sin analítica implementada correctamente, es imposible optimizar tu sitio web y tomar decisiones basadas en datos."
-            }
-          ]}
-          solutions={[
-            "Diseñamos landing pages centradas en conversión con una estructura que guía al usuario",
-            "Implementamos formularios optimizados que maximizan la captura de leads",
-            "Integramos tu landing con herramientas de email marketing, CRM y analítica",
-            "Optimizamos la velocidad de carga y experiencia móvil para reducir el abandono",
-            "Realizamos pruebas A/B para mejorar continuamente las tasas de conversión"
-          ]}
         />
 
-        <ServiceSection 
-          id="agentes"
-          subtitle="Automatización inteligente"
-          title="Agentes de IA para tu Negocio"
-          imageSrc="/src/assets/images/servicios/AgentAI.png"
+        <ServiceSection
+          id="ai-agents"
+          title="Automatización inteligente"
+          subtitle="Agentes de IA para tu Negocio"
+          imageSrc="/assets/images/servicios/AgentAI.png"
+          problems={aiProblems}
+          solutions={aiSolutions}
           color="teal"
-          problems={[
-            {
-              question: "¿Tu equipo pierde tiempo respondiendo las mismas preguntas?",
-              answer: "Las consultas repetitivas saturan a tu personal y les impiden enfocarse en tareas de mayor valor que realmente necesitan intervención humana."
-            },
-            {
-              question: "¿Pierdes clientes potenciales fuera del horario laboral?",
-              answer: "Cuando un cliente interesado no recibe respuesta inmediata, la probabilidad de que contacte a tu competencia aumenta significativamente."
-            },
-            {
-              question: "¿El proceso de ventas o atención es inconsistente?",
-              answer: "Sin automatización, la calidad del servicio depende de quién atiende, su estado de ánimo o carga de trabajo, creando experiencias dispares."
-            }
-          ]}
-          solutions={[
-            "Implementamos chatbots inteligentes entrenados con la información específica de tu negocio",
-            "Configuramos integraciones con WhatsApp Business, tu web y redes sociales",
-            "Automatizamos procesos de calificación de leads y agendamiento de citas",
-            "Programamos escenarios de conversación que reflejan el tono de tu marca",
-            "Proporcionamos reportes detallados de conversaciones e insights para mejorar tu negocio"
-          ]}
         />
       </main>
       
