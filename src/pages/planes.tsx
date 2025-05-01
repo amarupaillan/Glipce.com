@@ -199,13 +199,14 @@ const PlanesPage = () => {
     {
       title: "PRO",
       subtitle: "Presencia web profesional con IA",
-      price: "$147 USD / mes + IVA",
+      price: "$120 USD / mes + IVA",
       features: [
-        { text: "Página web profesional", included: true },
-        { text: "1 agente de IA personalizado", included: true },
-        { text: "1 revisión mensual", included: true },
-        { text: "Hosting incluido", included: true },
-        { text: "Optimización SEO básica", included: true }
+        { text: "Página web optimizada / personalizada", included: true },
+        { text: "Agente de IA 24/7", included: true },
+        { text: "SEO básico", included: true },
+        { text: "Vídeos mensuales", included: false },
+        { text: "Contenido SEO", included: false },
+        { text: "Estrategia de contenido", included: false }
       ],
       idealFor: "Negocios que necesitan una presencia web profesional con atención automatizada.",
       cta: "Empezar con PRO",
@@ -214,12 +215,13 @@ const PlanesPage = () => {
     {
       title: "PRO+",
       subtitle: "Contenido estratégico con IA",
-      price: "$177 USD / mes + IVA",
+      price: "$170 USD / mes + IVA",
       features: [
-        { text: "4 videos mensuales para redes", included: true },
-        { text: "1 agente de IA personalizado", included: true },
-        { text: "Creación de contenido SEO", included: true },
-        { text: "Actualización semanal", included: true },
+        { text: "Página web optimizada / personalizada", included: false },
+        { text: "Agente de IA 24/7", included: true },
+        { text: "SEO básico", included: false },
+        { text: "Vídeos mensuales", included: true },
+        { text: "Contenido SEO", included: true },
         { text: "Estrategia de contenido", included: true }
       ],
       idealFor: "Negocios con web que necesitan contenido constante para sus plataformas digitales.",
@@ -230,13 +232,14 @@ const PlanesPage = () => {
     {
       title: "PLATINO",
       subtitle: "Solución digital completa",
-      price: "$497 USD / mes + IVA",
+      price: "$250 USD / mes + IVA",
       features: [
-        { text: "Página web profesional", included: true },
-        { text: "6 videos mensuales para redes", included: true },
-        { text: "1 agente de IA personalizado", included: true },
-        { text: "Creación de contenido premium", included: true },
-        { text: "Estrategia y análisis mensual", included: true }
+        { text: "Página web optimizada / personalizada", included: true },
+        { text: "Agente de IA 24/7", included: true },
+        { text: "SEO básico", included: true },
+        { text: "Vídeos mensuales", included: true },
+        { text: "Contenido SEO", included: true },
+        { text: "Estrategia de contenido", included: true }
       ],
       idealFor: "Empresas que quieren delegar completamente su presencia digital y enfocarse en su negocio.",
       cta: "Trabajar con Glipce",

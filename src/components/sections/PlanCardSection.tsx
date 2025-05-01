@@ -88,13 +88,13 @@ export const PlanCardSection = (): JSX.Element => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <PlanCard
             title={t("PRO")}
-            price={t("$147 USD / mes")}
+            price={t("$120 USD / mes")}
             features={[
-              t("Página web profesional"),
-              t("1 agente de IA personalizado"),
-              t("1 revisión mensual"),
-              t("Hosting incluido"),
-              t("Optimización SEO básica")
+              t("Página web optimizada / personalizada"),
+              t("Agente de IA 24/7"),
+              t("SEO básico"),
+              t("Soporte técnico"),
+              t("Hosting incluido")
             ]}
             cta={t("Empezar con PRO")}
             ctaLink={calendlyUrl}
@@ -102,13 +102,13 @@ export const PlanCardSection = (): JSX.Element => {
           
           <PlanCard
             title={t("PRO+")}
-            price={t("$177 USD / mes")}
+            price={t("$170 USD / mes")}
             features={[
-              t("4 videos mensuales para redes"),
-              t("1 agente de IA personalizado"),
-              t("Creación de contenido SEO"),
-              t("Actualización semanal"),
-              t("Estrategia de contenido")
+              t("Agente de IA 24/7"),
+              t("Vídeos mensuales"),
+              t("Contenido SEO"),
+              t("Estrategia de contenido"),
+              t("Actualizaciones semanales")
             ]}
             isPopular={true}
             cta={t("Escalar con PRO+")}
@@ -117,13 +117,14 @@ export const PlanCardSection = (): JSX.Element => {
           
           <PlanCard
             title={t("PLATINO")}
-            price={t("$497 USD / mes")}
+            price={t("$250 USD / mes")}
             features={[
-              t("Página web profesional"),
-              t("6 videos mensuales para redes"),
-              t("1 agente de IA personalizado"),
-              t("Creación de contenido premium"),
-              t("Estrategia y análisis mensual")
+              t("Página web optimizada / personalizada"),
+              t("Agente de IA 24/7"),
+              t("SEO básico"),
+              t("Vídeos mensuales"),
+              t("Contenido SEO"),
+              t("Estrategia de contenido")
             ]}
             cta={t("Trabajar con Glipce")}
             ctaLink={calendlyUrl}
