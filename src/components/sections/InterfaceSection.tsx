@@ -15,7 +15,7 @@ export const InterfaceSection = (): JSX.Element => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
         </svg>
       ),
-      image: "/src/assets/images/cta/10.svg"
+      image: "/assets/images/cta/10.svg"
     },
     {
       title: "Kickoff",
@@ -25,7 +25,7 @@ export const InterfaceSection = (): JSX.Element => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
-      image: "/src/assets/images/cta/Goals.svg"
+      image: "/assets/images/cta/Goals.svg"
     },
     {
       title: "Desarrollo",
@@ -35,7 +35,7 @@ export const InterfaceSection = (): JSX.Element => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
         </svg>
       ),
-      image: "/src/assets/images/cta/cube-helix 1.svg"
+      image: "/assets/images/cta/cube-helix 1.svg"
     },
     {
       title: "Seguimiento",
@@ -45,7 +45,7 @@ export const InterfaceSection = (): JSX.Element => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
         </svg>
       ),
-      image: "/src/assets/images/cta/Stonks.svg"
+      image: "/assets/images/cta/Stonks.svg"
     }
   ];
 

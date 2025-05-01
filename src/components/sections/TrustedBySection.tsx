@@ -52,7 +52,7 @@ export const TrustedBySection = (): JSX.Element => {
                 <span className="text-foreground text-sm font-medium">{logo.placeholder}</span>
                 {/* La imagen real se usaría así:
                 <img 
-                  src={`/src/assets/images/logos/client-${index+1}.svg`} 
+                  src={`/assets/images/logos/client-${index+1}.svg`} 
                   alt={logo.alt} 
                   className="max-w-full max-h-12 opacity-70 hover:opacity-100 transition-all duration-300"
                 />
