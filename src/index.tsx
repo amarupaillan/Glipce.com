@@ -6,6 +6,7 @@ import ContactPage from "./pages/contacto";
 import ServiciosPage from "./pages/servicios";
 import PlanesPage from "./pages/planes";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 // Theme configuration
 import { ThemeProvider } from './components/ui/theme-provider';
@@ -99,6 +100,7 @@ const App = () => {
           </Routes>
         </BrowserRouter>
         <Analytics />
+        <SpeedInsights />
       </ThemeProvider>
     </TranslationProvider>
   );
