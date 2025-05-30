@@ -1,0 +1,13 @@
+/* Configuración global de tipografías */
+
+/* Geist como tipografía principal para todo el contenido */
+body, p, div, span, a, input, textarea, select, button, strong, b, .highlight, h1, h2, h3, h4, h5, h6,
+.testimonial-quote, .stat-number, .feature-title, .cta-text, .guarantee-text,
+.numbers, .statistics, .percentage, .numeric-value, .font-heading, .font-serif {
+  font-family: 'Geist', sans-serif;
+}
+
+/* Clases de utilidad para tipografías */
+.font-body {
+  font-family: 'Geist', sans-serif;
+} 
