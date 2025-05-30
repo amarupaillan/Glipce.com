@@ -32,14 +32,14 @@ export const Header = memo((): JSX.Element => {
     <header 
       className={cn(
         "fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300",
-        "bg-background/90 backdrop-blur-xl border border-blue-500/10 rounded-full shadow-lg shadow-blue-900/15",
+        "bg-background/90 backdrop-blur-xl border border-purple-500/10 rounded-full shadow-lg shadow-purple-900/15",
         "px-6 md:px-8 py-3 w-[95%] md:w-auto max-w-screen-xl"
       )}
     >
       <div className="max-w-full mx-auto">
         <div className="flex justify-between items-center space-x-4 md:space-x-8">
           {/* Logo */}
-          <Link to="/" className="font-bold text-xl md:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-primary flex-shrink-0">
+          <Link to="/" className="font-bold text-xl md:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-primary flex-shrink-0">
             Glipce<span className="text-primary">.com</span>
           </Link>
 
@@ -54,7 +54,7 @@ export const Header = memo((): JSX.Element => {
                 >
                   {link.text}
                   {/* Animated underline */}
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500 to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
                 </Link>
               
             ))}
@@ -66,7 +66,7 @@ export const Header = memo((): JSX.Element => {
 
           {/* CTA Button - Moved outside of Nav for simplicity */}
           <Button 
-            className="hidden md:flex items-center bg-gradient-to-r from-blue-600 to-primary shadow-md shadow-blue-900/20 px-5 py-2 text-sm flex-shrink-0 hover:opacity-90 transition-all whitespace-nowrap"
+            className="hidden md:flex items-center bg-gradient-to-r from-purple-600 to-primary shadow-md shadow-purple-900/20 px-5 py-2 text-sm flex-shrink-0 hover:opacity-90 transition-all whitespace-nowrap"
             size="sm"
             onClick={() => window.open(calendlyUrl, '_blank')}
           >
@@ -98,7 +98,7 @@ export const Header = memo((): JSX.Element => {
       {/* Mobile Menu */}
       <div
         className={cn(
-          "md:hidden bg-background/95 backdrop-blur-xl border-b border-blue-500/10 fixed top-16 left-0 w-full transition-transform duration-300 ease-in-out z-40",
+          "md:hidden bg-background/95 backdrop-blur-xl border-b border-purple-500/10 fixed top-16 left-0 w-full transition-transform duration-300 ease-in-out z-40",
           mobileMenuOpen ? "translate-y-0" : "-translate-y-full"
         )}
       >
@@ -108,7 +108,7 @@ export const Header = memo((): JSX.Element => {
                 <Link 
                   key={index} 
                   to={link.to} 
-                  className="block px-4 py-3 rounded-lg text-base font-medium text-foreground hover:bg-blue-500/10 hover:text-primary transition-all duration-200"
+                  className="block px-4 py-3 rounded-lg text-base font-medium text-foreground hover:bg-purple-500/10 hover:text-primary transition-all duration-200"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.text}
@@ -116,7 +116,7 @@ export const Header = memo((): JSX.Element => {
               
           ))}
           <Button 
-            className="w-full mt-6 bg-gradient-to-r from-blue-600 to-primary shadow-lg shadow-blue-900/20 hover:opacity-90 transition-all py-3"
+            className="w-full mt-6 bg-gradient-to-r from-purple-600 to-primary shadow-lg shadow-purple-900/20 hover:opacity-90 transition-all py-3"
             onClick={() => window.open(calendlyUrl, '_blank')}
           >
             <span className="whitespace-nowrap">{t("dentalClinic.header.cta")}</span>

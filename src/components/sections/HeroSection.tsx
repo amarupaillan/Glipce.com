@@ -4,7 +4,7 @@ import { useTranslation } from "../../hooks/useTranslation";
 
 export const HeroSection = (): JSX.Element => {
   const { t } = useTranslation();
-  
+
   return (
     <section className="relative py-20 md:py-28 lg:py-36 overflow-hidden">
       {/* Background gradient */}
@@ -22,10 +22,7 @@ export const HeroSection = (): JSX.Element => {
       <div className="absolute top-1/4 right-5 md:right-20 w-32 h-32 md:w-56 md:h-56 z-0 opacity-60">
         <img src="/assets/images/hero/doctor-with-phone.png" alt="Doctora con celular" className="w-full h-full object-contain" />
       </div>
-      <div className="absolute bottom-1/4 left-5 md:left-20 w-32 h-32 md:w-56 md:h-56 z-0 opacity-60">
-        <img src="/assets/images/hero/appointment-calendar.png" alt="Calendario de citas" className="w-full h-full object-contain" />
-      </div>
-
+      
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center">
           {/* Hero content - Left side */}
@@ -123,12 +120,21 @@ export const HeroSection = (): JSX.Element => {
           <div className="lg:w-2/5 flex justify-center lg:justify-end relative">
             <div className="relative w-full max-w-md">
               {/* Main image with animation */}
-              <div className="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300 border-4 border-white dark:border-gray-800">
+              <div className="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300 border-4 border-white dark:border-gray-800 relative">
                 <img 
                   src="/assets/images/hero/video-production.jpg" 
                   alt="Producción de video en clínica dental" 
                   className="w-full h-auto object-cover"
                 />
+                
+                {/* Calendario posicionado en la esquina inferior */}
+                <div className="absolute bottom-0 right-0 w-24 h-24 md:w-32 md:h-32 transform translate-x-1/4 translate-y-1/4 z-10">
+                  <img 
+                    src="/assets/images/hero/calendario.png" 
+                    alt="Calendario de citas" 
+                    className="w-full h-full object-contain drop-shadow-xl"
+                  />
+                </div>
               </div>
               
               {/* Floating card 1 - Production notification */}
