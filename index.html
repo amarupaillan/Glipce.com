@@ -1,39 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
-    <title>Glipce | Consultoría de Automatización e Inteligencia Artificial</title>
+    <title>Glipce | Consultoría de Automatización e Inteligencia Artificial para Clínicas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Transformamos empresas mediante IA y automatización, optimizando procesos y reduciendo costos operativos hasta en un 40%. Solicite su diagnóstico gratuito." />
-    <meta name="keywords" content="automatización, inteligencia artificial, consultoría IA, optimización procesos, reducción costos, eficiencia empresarial" />
+    <meta name="description" content="Transformamos clínicas mediante IA y automatización, optimizando procesos y llenando agendas con pacientes calificados. Conseguimos hasta un 40% más de citas en 30 días con nuestra garantía por contrato." />
+    <meta name="keywords" content="automatización clínicas dentales, inteligencia artificial consultorio, publicidad para clínicas, videos virales dentistas, marketing dental, optimización procesos clínica, agenda digital, IA para odontólogos" />
     <meta name="author" content="Glipce" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1E40AF" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://glipce.com/" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://glipce.com/" />
-    <meta property="og:title" content="Glipce | Consultoría de Automatización e Inteligencia Artificial" />
-    <meta property="og:description" content="Automatizamos procesos de su empresa mediante IA avanzada, optimizando recursos y reduciendo costos hasta en un 40%." />
-    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:title" content="Glipce | Consultoría de Automatización para Clínicas Dentales" />
+    <meta property="og:description" content="Llenamos tu clínica con pacientes calificados en 30 días o trabajamos gratis. Sistema garantizado por contrato que llena tu agenda sin que tengas que responder mensajes." />
+    <meta property="og:image" content="https://glipce.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Glipce" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://glipce.com/" />
-    <meta property="twitter:title" content="Glipce | Consultoría de Automatización e Inteligencia Artificial" />
-    <meta property="twitter:description" content="Automatizamos procesos de su empresa mediante IA avanzada, optimizando recursos y reduciendo costos hasta en un 40%." />
-    <meta property="twitter:image" content="/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://glipce.com/" />
+    <meta name="twitter:title" content="Glipce | Aumenta tus citas en un 40%" />
+    <meta name="twitter:description" content="Sistema garantizado de videos virales y automatización que llena tu agenda de pacientes calificados en 30 días." />
+    <meta name="twitter:image" content="https://glipce.com/og-image.jpg" />
     
     <!-- Favicon -->
-    <link rel="icon" href="/assets/images/logo.png" />
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
     <link rel="apple-touch-icon" href="/assets/images/logo.png" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     
     <!-- Google Fonts -->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap");
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
     <link href="tailwind.css" rel="stylesheet" />
+    
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Glipce",
+        "description": "Consultoría de Automatización e Inteligencia Artificial para Clínicas Dentales",
+        "url": "https://glipce.com/",
+        "logo": "https://glipce.com/assets/images/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/glipce",
+          "https://www.instagram.com/glipce_oficial",
+          "https://www.linkedin.com/company/glipce"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+56912345678",
+          "contactType": "customer service",
+          "areaServed": "CL",
+          "availableLanguage": ["Spanish", "English"]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CL",
+          "addressLocality": "Santiago"
+        },
+        "offers": {
+          "@type": "Offer",
+          "name": "Servicio de Automatización para Clínicas",
+          "description": "Sistema completo de videos virales y automatización para llenar agendas en 30 días o menos.",
+          "price": "997.00",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
   </head>
-  <body>
+  <body class="antialiased">
     <div id="app"></div>
     <script type="module" src="./src/index.tsx"></script>
+    <noscript>
+      <div style="padding: 2rem; text-align: center; font-family: sans-serif;">
+        <h1>Esta aplicación requiere JavaScript</h1>
+        <p>Por favor, habilita JavaScript en tu navegador para utilizar Glipce.</p>
+      </div>
+    </noscript>
   </body>
 </html>

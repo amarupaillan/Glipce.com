@@ -8,56 +8,56 @@
 }
 
 :root {
-  --body-bold-font-family: "Inter", Helvetica;
+  --body-bold-font-family: "Geist", "Inter", Helvetica;
   --body-bold-font-size: 16px;
   --body-bold-font-style: normal;
-  --body-bold-font-weight: 500;
+  --body-bold-font-weight: 600;
   --body-bold-letter-spacing: -0.32px;
   --body-bold-line-height: normal;
-  --body-large-font-family: "Inter", Helvetica;
+  --body-large-font-family: "Geist", "Inter", Helvetica;
   --body-large-font-size: 22px;
   --body-large-font-style: normal;
   --body-large-font-weight: 400;
   --body-large-letter-spacing: -0.7919999790191651px;
   --body-large-line-height: 31px;
-  --body-medium-font-family: "Inter", Helvetica;
+  --body-medium-font-family: "Geist", "Inter", Helvetica;
   --body-medium-font-size: 16px;
   --body-medium-font-style: normal;
   --body-medium-font-weight: 400;
   --body-medium-letter-spacing: -0.16px;
   --body-medium-line-height: 23px;
-  --body-s-bold-font-family: "Inter", Helvetica;
+  --body-s-bold-font-family: "Geist", "Inter", Helvetica;
   --body-s-bold-font-size: 14px;
   --body-s-bold-font-style: normal;
   --body-s-bold-font-weight: 700;
   --body-s-bold-letter-spacing: 0px;
   --body-s-bold-line-height: normal;
-  --body-s-font-family: "Inter", Helvetica;
+  --body-s-font-family: "Geist", "Inter", Helvetica;
   --body-s-font-size: 14px;
   --body-s-font-style: normal;
   --body-s-font-weight: 400;
   --body-s-letter-spacing: 0px;
   --body-s-line-height: normal;
-  --body-small-tag-font-family: "DM Sans", Helvetica;
+  --body-small-tag-font-family: "Geist", "DM Sans", Helvetica;
   --body-small-tag-font-size: 14px;
   --body-small-tag-font-style: normal;
   --body-small-tag-font-weight: 400;
   --body-small-tag-letter-spacing: 0px;
   --body-small-tag-line-height: normal;
-  --general-shadow-02: 0px 2px 12px 0px rgba(20, 20, 43, 0.08);
-  --h2-font-family: "DM Sans", Helvetica;
+  --general-shadow-02: 0px 4px 16px 0px rgba(17, 24, 39, 0.1);
+  --h2-font-family: "Geist", "DM Sans", Helvetica;
   --h2-font-size: 54px;
   --h2-font-style: normal;
   --h2-font-weight: 700;
-  --h2-letter-spacing: -3.24px;
+  --h2-letter-spacing: -2px;
   --h2-line-height: 60px;
-  --h5-font-family: "DM Sans", Helvetica;
+  --h5-font-family: "Geist", "DM Sans", Helvetica;
   --h5-font-size: 18px;
   --h5-font-style: normal;
   --h5-font-weight: 700;
   --h5-letter-spacing: -0.5579999828338623px;
   --h5-line-height: normal;
-  --tag-font-family: "Inter", Helvetica;
+  --tag-font-family: "Geist", "Inter", Helvetica;
   --tag-font-size: 13px;
   --tag-font-style: normal;
   --tag-font-weight: 500;
@@ -92,15 +92,19 @@
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --accent: 217 91% 60%;
+    --accent: 225 82% 36%;
     --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 100% 50%;
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --ring: 217 91% 60%;
 
     --radius: 0.5rem;
+    
+    /* Gradient variables */
+    --gradient-start: rgba(37, 99, 235, 0.05);
+    --gradient-end: rgba(255, 255, 255, 0);
   }
 
   .dark {
@@ -110,7 +114,7 @@
     --muted: 223 47% 11%;
     --muted-foreground: 215.4 16.3% 56.9%;
 
-    --accent: 217 91% 60%;
+    --accent: 224 76% 48%;
     --accent-foreground: 210 40% 98%;
 
     --popover: 224 71% 4%;
@@ -134,11 +138,15 @@
     --ring: 217 91% 60%;
 
     --radius: 0.5rem;
+    
+    /* Dark mode gradient variables */
+    --gradient-start: rgba(37, 99, 235, 0.1);
+    --gradient-end: rgba(0, 0, 0, 0);
   }
 
   /* Estilos para el efecto shimmer en texto */
   .text-shimmer {
-    background: linear-gradient(90deg, #2563eb, #3b82f6, #60a5fa, #3b82f6, #2563eb);
+    background: linear-gradient(90deg, #1e40af, #2563eb, #60a5fa, #2563eb, #1e40af);
     background-size: 200% auto;
     color: transparent;
     background-clip: text;
@@ -156,5 +164,46 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+    letter-spacing: -0.01em;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+  
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  .card {
+    @apply rounded-xl border bg-card text-card-foreground shadow;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-primary;
+  }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-muted;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/40 rounded-full hover:bg-primary/60 transition-colors;
+}
+
+/* Focus styles for better accessibility */
+:focus-visible {
+  @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
 }
