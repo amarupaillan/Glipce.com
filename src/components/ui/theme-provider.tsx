@@ -46,7 +46,7 @@ export function ThemeProvider({
       }
     } else {
       // Apply dark theme as default instead of checking system preference
-      document.documentElement.classList.add('dark');
+        document.documentElement.classList.add('dark');
       localStorage.setItem(storageKey, 'dark');
       setCurrentTheme('dark');
     }

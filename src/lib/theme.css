@@ -3,7 +3,7 @@
   --background: #ffffff;
   --foreground: #1a1a1a;
   
-  --primary: #2563eb; /* Cambiado a azul principal de Glipce */
+  --primary: #8a2be2; /* Purple as the primary color */
   --primary-foreground: #ffffff;
   
   --secondary: #f3f4f6; /* gray-100 */
@@ -12,7 +12,7 @@
   --muted: #f3f4f6; /* gray-100 */
   --muted-foreground: #6b7280; /* gray-500 */
   
-  --accent: #8b5cf6; /* Toque púrpura como acento secundario */
+  --accent: #8a2be2; /* Purple accent */
   --accent-foreground: #ffffff;
   
   --card: #ffffff;
@@ -21,28 +21,28 @@
   --border: #e5e7eb; /* gray-200 */
   --input: #e5e7eb; /* gray-200 */
   
-  --ring: #2563eb; /* Blue ring */
+  --ring: #8a2be2; /* Purple ring */
   
   --radius: 0.5rem;
 
   /* Custom colors for UI elements */
   --hero-gradient-start: #ffffff;
-  --hero-gradient-middle: rgba(37, 99, 235, 0.1); /* Blue with opacity */
+  --hero-gradient-middle: rgba(138, 43, 226, 0.4); /* Purple with opacity */
   --hero-gradient-end: #ffffff;
   
   --header-bg: rgba(255, 255, 255, 0.8);
   --header-text: #1a1a1a;
-  --header-accent: #2563eb;
+  --header-accent: #8a2be2;
   
-  --button-primary-bg: #2563eb;
+  --button-primary-bg: #8a2be2;
   --button-primary-text: #ffffff;
   --button-secondary-bg: transparent;
   --button-secondary-text: #1a1a1a;
   --button-secondary-border: rgba(26, 26, 26, 0.3);
   
-  --badge-bg: rgba(37, 99, 235, 0.1);
-  --badge-text: #2563eb;
-  --badge-border: rgba(37, 99, 235, 0.3);
+  --badge-bg: rgba(138, 43, 226, 0.1);
+  --badge-text: #8a2be2;
+  --badge-border: rgba(138, 43, 226, 0.3);
 }
 
 [data-theme="dark"] {
@@ -50,7 +50,7 @@
   --background: #121212;
   --foreground: #f3f4f6; /* gray-100 */
   
-  --primary: #3b82f6; /* Slightly lighter blue for dark mode */
+  --primary: #8a2be2; /* Keep purple as primary in dark mode too */
   --primary-foreground: #ffffff;
   
   --secondary: #1f2937; /* gray-800 */
@@ -59,7 +59,7 @@
   --muted: #1f2937; /* gray-800 */
   --muted-foreground: #9ca3af; /* gray-400 */
   
-  --accent: #8b5cf6; /* Púrpura como acento secundario */
+  --accent: #8a2be2; /* Keep purple as accent */
   --accent-foreground: #ffffff;
   
   --card: #1e1e1e;
@@ -68,18 +68,18 @@
   --border: #374151; /* gray-700 */
   --input: #374151; /* gray-700 */
   
-  --ring: #3b82f6; /* Blue ring */
+  --ring: #8a2be2; /* Keep purple ring */
 
   /* Custom colors for UI elements in dark mode */
   --hero-gradient-start: #121212;
-  --hero-gradient-middle: rgba(59, 130, 246, 0.2); /* Blue with opacity */
+  --hero-gradient-middle: rgba(138, 43, 226, 0.4); /* Purple with opacity */
   --hero-gradient-end: #121212;
   
   --header-bg: rgba(18, 18, 18, 0.8);
   --header-text: #ffffff;
-  --header-accent: #3b82f6;
+  --header-accent: #8a2be2;
   
-  --button-primary-bg: #3b82f6;
+  --button-primary-bg: #8a2be2;
   --button-primary-text: #ffffff;
   --button-secondary-bg: transparent;
   --button-secondary-text: #ffffff;
@@ -87,7 +87,7 @@
   
   --badge-bg: rgba(0, 0, 0, 0.5);
   --badge-text: #ffffff;
-  --badge-border: rgba(59, 130, 246, 0.4);
+  --badge-border: rgba(138, 43, 226, 0.4);
 }
 
 /* Estilos globales */

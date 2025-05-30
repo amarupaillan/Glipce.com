@@ -23,7 +23,7 @@ function addFavicon() {
     const link = document.createElement('link');
     link.rel = 'icon';
     link.href = '/favicon.ico';
-    document.head.appendChild(link);
+  document.head.appendChild(link);
   }
 }
 
