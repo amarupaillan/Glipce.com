@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Home Page -->
+  <url>
+    <loc>https://glipce.com/</loc>
+    <lastmod>2023-06-15T10:30:00+00:00</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <!-- Main Service Pages -->
+  <url>
+    <loc>https://glipce.com/#soluciones</loc>
+    <lastmod>2023-06-15T10:30:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://glipce.com/#casos</loc>
+    <lastmod>2023-06-15T10:30:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://glipce.com/#garantia</loc>
+    <lastmod>2023-06-15T10:30:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Blog posts would go here if you add a blog -->
+  
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://glipce.com/politica-privacidad</loc>
+    <lastmod>2023-06-15T10:30:00+00:00</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://glipce.com/terminos-condiciones</loc>
+    <lastmod>2023-06-15T10:30:00+00:00</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+</urlset> 

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 150 15% 15%;
+
+    --muted: 40 15% 92%;
+    --muted-foreground: 150 8% 45%;
+
+    --popover: 40 20% 97%;
+    --popover-foreground: 150 15% 15%;
+
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+
+    --card: 40 20% 97%;
+    --card-foreground: 150 15% 15%;
+
+    --primary: 145 40% 28%;
+    --primary-foreground: 40 20% 97%;
+
+    --secondary: 35 30% 90%;
+    --secondary-foreground: 150 15% 15%;
+
+    --accent: 35 45% 55%;
+    --accent-foreground: 40 20% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 145 40% 28%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 150 15% 7%;
+    --foreground: 40 15% 90%;
+
+    --muted: 150 12% 14%;
+    --muted-foreground: 40 10% 55%;
+
+    --popover: 150 15% 7%;
+    --popover-foreground: 40 15% 90%;
+
+    --border: 150 10% 18%;
+    --input: 150 10% 18%;
+
+    --card: 150 12% 10%;
+    --card-foreground: 40 15% 90%;
+
+    --primary: 145 40% 38%;
+    --primary-foreground: 150 15% 7%;
+
+    --secondary: 150 12% 14%;
+    --secondary-foreground: 40 15% 90%;
+
+    --accent: 35 45% 55%;
+    --accent-foreground: 150 15% 7%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 145 40% 38%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-foreground/15 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-foreground/25;
+}
+
+/* Focus styles */
+:focus-visible {
+  @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+}
